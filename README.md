@@ -1,1 +1,1 @@
-# clube-magmaxx-cupom-desconto
+# Clube Magmaxx Cupom Desconto
