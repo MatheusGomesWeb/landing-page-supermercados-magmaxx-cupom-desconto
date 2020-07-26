@@ -1,6 +1,6 @@
 /* Header */
 header {
-    background: url('/public/img/header-bg.png') no-repeat;
+    background: url('../img/header-bg.png') no-repeat;
     width: 100%;
     height: 100%;
     background-origin: border-box;
@@ -15,7 +15,7 @@ header {
 
     /* Header logo */
     .header-logo {
-        background: url('/public/img/logo.png') no-repeat;
+        background: url('../img/logo.png') no-repeat;
         width: 360px;
         height: 180px;
         background-size: contain;
@@ -30,7 +30,7 @@ header {
 
     /* Header Button Page Down */
     .header-btn-pagedown {
-        background: url('/public/img/arrow.png') no-repeat;
+        background: url('../img/arrow.png') no-repeat;
         width: 97px;
         height: 98px;
         cursor: pointer;
