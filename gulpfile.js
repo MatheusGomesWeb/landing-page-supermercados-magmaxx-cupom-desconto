@@ -289,7 +289,7 @@ function minificarSass(callback) {
 
     gulp.src(settings.sourceFolders.sass + '*.scss')
         .pipe(concat('style.css'))
-        .pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError))
+        .pipe(sass({ outputStyle: 'expanded' }).on('error', sass.logError))
         .pipe(gulp.dest(settings.publicFolders.css));
 
     callback();
