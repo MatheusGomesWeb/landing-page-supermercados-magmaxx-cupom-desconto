@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clube Magmaxx - Cadastre-se para descontos e premios !</title>
     <link rel="shortcut icon" href="public/img/logo.png" type="image/x-icon">
     <!--stylesheets-->
-    <link href="public/css/style.css" rel="stylesheet">
+    <link href="public/css/style.min.css" rel="stylesheet">
 </head>
 
 <body>
 
     <header>
-        
+
         <div class="header-logo"></div>
         <!--header-logo-->
 
@@ -28,7 +29,69 @@
     <!--header-->
 
     <main>
-        main
+
+        <div class="main-title">
+            <h1>NO CLUBE DE DESCONTOS</h1>
+            <h3><span>você tem acesso á ofertas exclusivas</span></h3>
+
+            <h2>CADASTRE-SE JÁ!</h2>
+            <h6>PREENCHA CORRETAMENTE TODAS AS INFORMAÇÕES</h6>
+
+        </div>
+        <!--main-title-->
+        <form action="#" id="formCadastro">
+
+            <input type="text" name="nome" id="nome" placeholder="Nome">
+
+            <div class="input-size">
+
+                <input type="date" name="dtNascimento" id="dtNascimento" placeholder="Data de Nascimento">
+
+                <select name="sexo" id="sexo">
+                    <option value="opcao" selected>Sexo</option>
+                    <option value="masculino">Masculino</option>
+                    <option value="feminino">Feminino</option>
+                </select>
+
+                <select name="estadoCivil" id="estadoCivil">
+                    <option value="opcao" selected>Estado Cívil</option>
+                    <option value="casado">Casado</option>
+                    <option value="solteiro">Solteiro</option>
+                </select>
+
+                <input type="text" name="rg" id="rg" placeholder="RG">
+                <input type="text" name="cpf" id="cpf" placeholder="CPF">
+                <input type="text" name="endereco" id="endereco" placeholder="Endereço">
+                <input type="text" name="numero" id="numero" placeholder="Número">
+                <input type="text" name="cep" id="cep" placeholder="CEP">
+                <input type="text" name="bairro" id="bairro" placeholder="Bairro">
+
+            </div>
+            <!--input size-->
+            
+            <input type="text" name="telefone" id="telefone" placeholder="Telefone">
+            <input type="tel" name="celular" id="celular" placeholder="Celular">
+            <input type="email" name="email" id="email" placeholder="E-mail">
+
+            <div class="form-checkbox-submit">
+
+                <div class="termos">
+
+                    <input type="checkbox" name="lembrar" id="lembrar">
+
+                    <label for="lembrar">Aceito os <font color="#eb7b30">termos</font> e condições e desejo me associar
+                        ao Clube de Descontos Magmaxx</label>
+
+                </div>
+                <!--termos-->
+
+                <input type="submit" value="cadastrar">
+
+            </div>
+            <!--form-checkbox-submit-->
+
+        </form>
+        <!--formulario-->
     </main>
     <!--main-->
 
@@ -38,8 +101,10 @@
     <!--footer-->
 
     <!--javascripts-->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
     <script src="public/js/functions.js"></script>
 
 </body>
+
 </html>
