@@ -79,7 +79,8 @@ const settings = {
         sassReset: 'reset.scss',
         sassMediaQueries: 'mediaqueries.scss',
         sassColor: 'colors.scss',
-        sassFonts: 'fonts.scss' // fontes
+        sassFonts: 'fonts.scss', // fontes
+        sassForms: 'forms.scss'
     }
 
 };
@@ -292,7 +293,7 @@ function minificarSass(callback) {
             grid: "true",
             cascade: false
         }))
-        .pipe(concat('style.css'))
+        .pipe(concat('style.min.css'))
         .pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError))
         .pipe(gulp.dest(settings.publicFolders.css));
 
