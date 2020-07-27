@@ -14,3 +14,10 @@ body {
     font-weight: $fontMontserratWeightRegular;
     color: $titleColor;
 }
+
+/* Width height sections */
+
+header, main, footer {
+    width: 100%;
+    height: 100%;
+}
