@@ -1,69 +1,120 @@
 /* Header */
 header {
-    background: url('../img/header-bg.png') no-repeat;    
+    background: url("../img/header-bg.png") no-repeat;
     background-origin: border-box;
     background-size: cover;
     background-position: top right;
     border-left: 1px solid $headerBorderLeftColor;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    padding-top: 60px;
+    padding-top: 85px;
+    width: 100%;
+    height: 100%;
 
     /* Header logo */
     .header-logo {
-        background: url('../img/logo.png') no-repeat;
-        width: 360px;
-        height: 180px;
-        background-size: contain;
+        text-align: center;
+        img {
+            width: 65%;
+            height: 160px;
+            background-size: cover;
+        }
     }
 
     /* Header Button Text */
     .header-title {
-        color: $titleColor;      
+        color: $titleColor;
         text-align: center;
-        margin: 15px 0 25px 0;
+        margin: 15px 0;
+        line-height: 30px;
     }
 
     /* Header Button Page Down */
     .header-btn-pagedown {
-        background: url('../img/arrow.png') no-repeat;
-        width: 97px;
-        height: 98px;
-        cursor: pointer;
+        text-align: center;
+        img {
+            width: 77px;
+            height: 78px;
+            cursor: pointer;
+        }
     }
 }
 
 /* Main */
-main {    
-    
+main {
+    width: 80%;
+    margin: 0 auto;
+
     /* Main main-title */
     .main-title {
         text-align: center;
         text-transform: uppercase;
-        h1,h2 {
+        h1,
+        h2 {
             margin: 10px 0;
         }
+
+        /* Main text with orange background */
         h3 {
             color: white;
-            
-            span {
-            background-color: #eb7323;
-            padding: 0 10px;
-        }
-        }
-        h3,h6 {
             font-family: $fontMontserrat;
             font-weight: $fontMontserratWeightRegular;
+            background-color: #eb7323;
+            padding: 0 10px;
+            display: inline-block;
+            &:nth-child(3) {
+                margin-top: 5px;
+            }
         }
+
+        /* Main text menor texto */
         h6 {
+            font-family: $fontMontserrat;
+            font-weight: $fontMontserratWeightRegular;
             font-size: 18px;
         }
     }
 }
 
+/* Footer */
+
 footer {
-    color: yellow;
-    border: 1px soldi yellow;
+    color: white;
+    padding: 0;
+
+    /* Footer sobre-footer */
+    .sobre-footer {
+        background-color: #d1742f;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding: 30px 10px;
+        text-align: center;
+
+        div {
+            border-right: 1px solid green;
+            padding: 0 10px;
+        }
+    }
+
+    /* Footer sub-footer */
+    .sub-footer {
+        background: #60a549;
+        width: 100%;
+        height: auto;
+        text-align: center;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 30px 10px;
+        p {
+            text-transform: uppercase;
+            font-size: 0.675em;
+        }
+        img {
+            /* width: 190px;
+            height: 78px;*/
+            width: 87px;
+            height: 35px;
+        }
+    }
 }

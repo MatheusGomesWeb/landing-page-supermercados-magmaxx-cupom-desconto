@@ -4,7 +4,8 @@
     box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
     height: 100%;
 }
 
@@ -15,9 +16,8 @@ body {
     color: $titleColor;
 }
 
-/* Width height sections */
-
-header, main, footer {
-    width: 100%;
-    height: 100%;
+/* flex-wrapper */
+#flex-wrapper {
+    display: flex;
+    flex-direction: column;
 }
