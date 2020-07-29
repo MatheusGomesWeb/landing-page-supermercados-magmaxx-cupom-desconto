@@ -53,7 +53,7 @@
 
                 <div class="input-size">
 
-                    <input type="date" name="dtNascimento" id="dtNascimento" placeholder="Data de Nascimento">
+                    <input type="text" name="dtNascimento" id="dtNascimento" placeholder="Data de Nascimento">
 
                     <select name="sexo" id="sexo">
                         <option value="opcao" selected>Sexo</option>
@@ -87,9 +87,10 @@
 
                         <input type="checkbox" name="lembrar" id="lembrar">
 
-                        <label for="lembrar">Aceito os <font color="#eb7b30">termos</font> e condições e desejo me
+                        <label for="lembrar">Aceito os <span style="color:#eb7b30;">termos</span> e condições e desejo
+                            me
                             associar
-                            ao Clube de Descontos <font color="#eb7b30">Magmaxx</font></label>
+                            ao Clube de Descontos <span style="color:#eb7b30;">Magmaxx</span></label>
 
                     </div>
                     <!--termos-->
@@ -155,12 +156,13 @@
 
                     <h6 style="text-align: left;">Entregas em Domicílio</h6>
 
-                    <ul class="entregas">
+                    <div class="entregas">
 
-                        <li style="text-transform: initial; float: left;">verifique <br> disponibilidade <br> e condições <br> em cada loja</li>
-                        <li><img src="public/img/carrinho.png" alt="entregas" class="carrinho"></li>
-
-                        <div style="clear: both; margin-bottom: 20px;"></div>
+                        <ul>
+                            <li style="text-transform: initial; float: left;">verifique <br> disponibilidade <br> e
+                                condições <br> em cada loja</li>
+                            <li class="carrinho"><img src="public/img/carrinho.png" alt="entregas"></li>
+                        </ul>
 
                         <ul>
                             <li><img src="public/img/ico-facebook.png" alt="facebook" class="ico-facebook"></li>
@@ -177,8 +179,8 @@
                             <li>http://magmaxx.com.br</li>
                         </ul>
 
-                    </ul>
-
+                    </div>
+                    <!--entregas-->
 
                 </div>
                 <!--entregas-em-domicilio-->

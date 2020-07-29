@@ -141,10 +141,18 @@ footer {
 
                 /* Entregas icons images */
 
-                li .carrinho {
-                    width: 176px;
-                    height: 86px;
-                    float: right;
+                li.carrinho {
+                    img {
+                        width: 176px;
+                        height: 86px;
+                        float: right;
+                    }
+                    &::after {
+                        content: "";
+                        display: table;
+                        clear: both;
+                        margin-bottom: 20px;
+                    }
                 }
                 li .ico-facebook,
                 li .ico-site,
