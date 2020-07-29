@@ -81,6 +81,7 @@ footer {
     padding: 0;
 
     /* Footer sobre-footer */
+
     .sobre-footer {
         background-color: #d1742f;
         display: flex;
@@ -90,13 +91,91 @@ footer {
         padding: 30px 10px;
         text-align: center;
 
-        div {
+        h6 {
+            color: white;
+            text-transform: uppercase;
+            font-weight: $fontMontserratWeightRegular;
+            margin-bottom: 20px;
+            font-size: 18px;
+            text-align: left;
+        }
+
+        ul li {
+            list-style: none;
+            padding: 5px 10px;
+        }
+
+        /* Footer nossas-lojas */
+
+        .nossas-lojas {
+            color: white;
+            text-align: center;
             border-right: 1px solid green;
-            padding: 0 10px;
+            min-width: 350px;
+
+            ul.lojas {
+                li:nth-child(1) {
+                    background: #5fa553;
+                    padding: 5px 10px;
+                    margin-bottom: 10px;
+                    text-transform: uppercase;
+                }
+            }
+        }
+
+        /* Footer entregas em domicilio */
+
+        .entregas-em-domicilio {
+            min-width: 350px;
+            margin: 60px 0;
+
+            .entregas {
+                text-align: left;
+
+                ul li {
+                    display: inline-block;
+                    vertical-align: middle;
+                    text-transform: uppercase;
+                    font-weight: 500;
+                }
+
+                /* Entregas icons images */
+
+                li .carrinho {
+                    width: 176px;
+                    height: 86px;
+                    float: right;
+                }
+                li .ico-facebook,
+                li .ico-site,
+                li .ico-instagram {
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+        }
+
+        /* Footer Aceitamos cartôes */
+
+        .aceitamos-cartoes {
+            min-width: 320px;
+            padding-left: 30px;
+            border-left: 1px solid green;
+
+            img {
+                width: 90%;
+                float: left;
+            }
+            p {
+                text-align: left;
+                clear: both;
+                padding-top: 5px;
+            }
         }
     }
 
     /* Footer sub-footer */
+
     .sub-footer {
         background: #60a549;
         width: 100%;
