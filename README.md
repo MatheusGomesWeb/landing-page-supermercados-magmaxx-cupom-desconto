@@ -10,14 +10,7 @@
 
 ## Tecnologias
 
-<img src="https://img.icons8.com/color/96/000000/html-5.png"/>
-<img src="https://img.icons8.com/color/96/000000/css3.png"/>
-<img src="https://img.icons8.com/color/96/000000/javascript.png"/>
-<img src="https://img.icons8.com/ios/100/000000/jquery.png"/>
-<img src="https://img.icons8.com/color/96/000000/sass.png"/>
-<img src="https://cdn.iconscout.com/icon/free/png-64/gulp-1-282455.png" style="width:100px; height: 100px;"/>
-<img src="https://img.icons8.com/color/96/000000/git.png"/>
-<img src="https://img.icons8.com/officel/80/000000/media-queries.png"/>
+<img src="https://img.icons8.com/color/96/000000/html-5.png"/><img src="https://img.icons8.com/color/96/000000/css3.png"/><img src="https://img.icons8.com/color/96/000000/javascript.png"/><img src="https://img.icons8.com/ios/100/000000/jquery.png"/><img src="https://img.icons8.com/color/96/000000/sass.png"/><img src="https://cdn.iconscout.com/icon/free/png-64/gulp-1-282455.png" style="width:100px; height: 100px;"/><img src="https://img.icons8.com/color/96/000000/git.png"/><img src="https://img.icons8.com/officel/80/000000/media-queries.png"/>
 
 ## Website Validado pelo site **W3C**
 
