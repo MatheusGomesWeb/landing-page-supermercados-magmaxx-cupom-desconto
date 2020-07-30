@@ -14,20 +14,25 @@
 
     <header>
 
-        <div class="header-logo">
-            <img src="public/img/logo.png" alt="Logo Magmaxx">
-        </div>
-        <!--header-logo-->
+        <div class="header-logo-wrapper">
 
-        <div class="header-title">
-            <h3>CADASTRE-SE NO <br> CLUBE DO DESCONTO</h3>
-        </div>
-        <!--header-title-->
+            <div class="header-logo">
+                <img src="public/img/logo.png" alt="Logo Magmaxx">
+            </div>
+            <!--header-logo-->
 
-        <div class="header-btn-pagedown">
-            <img src="public/img/arrow.png" alt="Page Down">
+            <div class="header-title">
+                <h3>CADASTRE-SE NO <br> CLUBE DO DESCONTO</h3>
+            </div>
+            <!--header-title-->
+
+            <div class="header-btn-pagedown">
+                <img src="public/img/arrow.png" alt="Page Down">
+            </div>
+            <!--btn-pagedown-->
+
         </div>
-        <!--btn-pagedown-->
+        <!--header-logo-wrapper-->
 
     </header>
     <!--header-->
@@ -49,11 +54,11 @@
             <!--main-title-->
             <form action="#" id="formCadastro">
 
-                <input type="text" name="nome" id="nome" placeholder="Nome">
+                <input type="text" name="nome" id="nome" placeholder="Nome" required>
 
                 <div class="input-size">
 
-                    <input type="text" name="dtNascimento" id="dtNascimento" placeholder="Data de Nascimento">
+                    <input type="text" name="dtNascimento" id="dtNascimento" placeholder="Data de Nascimento" required>
 
                     <select name="sexo" id="sexo">
                         <option value="opcao" selected>Sexo</option>
@@ -67,8 +72,8 @@
                         <option value="solteiro">Solteiro</option>
                     </select>
 
-                    <input type="text" name="rg" id="rg" placeholder="RG">
-                    <input type="text" name="cpf" id="cpf" placeholder="CPF">
+                    <input type="text" name="rg" id="rg" placeholder="RG" required>
+                    <input type="text" name="cpf" id="cpf" placeholder="CPF" required>
                     <input type="text" name="endereco" id="endereco" placeholder="Endereço">
                     <input type="text" name="numero" id="numero" placeholder="Número">
                     <input type="text" name="cep" id="cep" placeholder="CEP">
@@ -79,7 +84,7 @@
 
                 <input type="text" name="telefone" id="telefone" placeholder="Telefone">
                 <input type="tel" name="celular" id="celular" placeholder="Celular">
-                <input type="email" name="email" id="email" placeholder="E-mail">
+                <input type="email" name="email" id="email" placeholder="E-mail" required>
 
                 <div class="form-checkbox-submit">
 
@@ -87,10 +92,13 @@
 
                         <input type="checkbox" name="lembrar" id="lembrar">
 
-                        <label for="lembrar">Aceito os <span style="color:#eb7b30;">termos</span> e condições e desejo
-                            me
-                            associar
-                            ao Clube de Descontos <span style="color:#eb7b30;">Magmaxx</span></label>
+                        <label for="lembrar">
+
+                            Aceito os <span style="color:#eb7b30;">termos</span>
+                            e condições e desejo me associar ao Clube de Descontos
+                            <span style="color:#eb7b30;">Magmaxx</span>
+
+                        </label>
 
                     </div>
                     <!--termos-->
@@ -128,12 +136,12 @@
                     <ul class="lojas" style="margin: 20px 0;">
 
                         <li>
-                            <span>pariquera-açu</span>
-                            <span>loja 01</span>
+                            <span>iguape</span>
+                            <span>loja 02</span>
                         </li>
 
-                        <li>Av. Dr. Carlos Botello, 627 - Centro</li>
-                        <li>Tel.: (13) 3856-1930</li>
+                        <li>R. Euclydes Roque Bastos, 12 - Centro</li>
+                        <li>Tel.: (13) 3841-1123</li>
 
                     </ul>
 
@@ -141,16 +149,19 @@
 
                         <li>
                             <span>pariquera-açu</span>
-                            <span>loja 01</span>
+                            <span>loja 03</span>
                         </li>
 
-                        <li>Av. Dr. Carlos Botello, 627 - Centro</li>
-                        <li>Tel.: (13) 3856-1930</li>
+                        <li>Av. Dr Carlos Botello, 260 - Centro</li>
+                        <li>Tel.: (13) 3856-1032</li>
 
                     </ul>
 
                 </div>
                 <!--nossas-lojas-->
+
+                <div class="divider"></div>
+                <!--divider-->
 
                 <div class="entregas-em-domicilio">
 
@@ -184,6 +195,9 @@
 
                 </div>
                 <!--entregas-em-domicilio-->
+
+                <div class="divider"></div>
+                <!--divider-->
 
                 <div class="aceitamos-cartoes">
 
