@@ -1,2 +1,98 @@
-/* Breakpoints */
+/* Breakpoints 578px -> SMALL DEVICES */
 
+@media screen and(min-width:578px) {
+}
+
+/* Breakpoints 768px -> MEDIUM DEVICES */
+
+@media screen and(min-width:768px) {
+    /* Main text with orange background */
+    main .main-title h3 {
+        display: inline !important;
+        &:nth-child(2) {
+            padding-right: 0 !important;
+        }
+        &:nth-child(3) {
+            padding-left: 0 !important;
+        }
+    }
+
+    /* Footer subfooter */
+    footer .sub-footer {
+        font-size: 20px;
+        img {
+            width: 190px !important;
+            height: 78px !important;
+        }
+    }
+}
+
+/* Breakpoints 992px -> DESKTOP DEVICES */
+
+@media screen and(min-width:992px) {
+    /* Header logo */
+    header .header-logo-wrapper {
+        .header-logo img {
+            width: 425px !important;
+            height: 240px !important;
+        }
+
+        /* Header Button Text */
+        .header-title h3 {
+            font-size: 32px !important;
+            line-height: 32px;
+        }
+
+        /* Header Button Page Down */
+        .header-btn-pagedown {
+            img {
+                width: 97px;
+                height: 98px;
+            }
+        }
+    }
+
+    /* Main Formulario */
+    #formCadastro {
+        /* input size */
+        .input-size {
+            input,
+            select {
+                width: 32.5% !important;
+            }
+        }
+
+        /* Form Checkbox Submit */
+        .form-checkbox-submit {
+            flex-direction: row !important;
+            align-items: flex-start !important;
+        }
+    }
+
+    /* Footer */
+    footer {
+        .divider {
+            display: block !important;
+        }
+
+        .sobre-footer {
+            flex-direction: row !important;
+            align-items: flex-start !important;
+
+            .entregas-em-domicilio {
+                margin: 0 !important;
+
+                .entregas {
+                    ul li {
+                        font-size: 17px !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Breakpoints 1200px -> LARGE DEVICES */
+
+@media screen and(min-width:1200) {
+}

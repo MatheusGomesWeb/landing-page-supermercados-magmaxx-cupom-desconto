@@ -5,17 +5,27 @@ header {
     background-size: cover;
     background-position: top right;
     border-left: 1px solid $headerBorderLeftColor;
-    padding-top: 85px;
+    /*padding-top: 30px;*/
     width: 100%;
     height: 100%;
+    /*padding-top: 12.5%;*/
 
-    /* Header logo */
-    .header-logo {
-        text-align: center;
-        img {
-            width: 65%;
-            height: 160px;
-            background-size: cover;
+    .header-logo-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 80%;
+
+        /* Header logo */
+        .header-logo {
+            text-align: center;
+            img {
+                width: 80%;
+                height: 160px;
+                background-size: cover;
+            }
         }
     }
 
@@ -49,7 +59,7 @@ main {
         text-transform: uppercase;
         h1,
         h2 {
-            margin: 10px 0;
+            margin: 20px 0;
         }
 
         /* Main text with orange background */
@@ -79,6 +89,17 @@ main {
 footer {
     color: white;
     padding: 0;
+
+    /* Divider */
+
+    .divider {
+        margin: 0 30px;
+        color: green;
+        display: none;
+        height: 40vh;
+        border-right: 1px solid #5fa553;
+        margin-top: 20px;
+    }
 
     /* Footer sobre-footer */
 
@@ -110,8 +131,7 @@ footer {
         .nossas-lojas {
             color: white;
             text-align: center;
-            border-right: 1px solid green;
-            min-width: 350px;
+            width: auto;
 
             ul.lojas {
                 li:nth-child(1) {
@@ -119,6 +139,18 @@ footer {
                     padding: 5px 10px;
                     margin-bottom: 10px;
                     text-transform: uppercase;
+                    &::after {
+                        content: "";
+                        display: table;
+                        clear: both;
+                    }
+
+                    span:nth-child(1) {
+                        float: left;
+                    }
+                    span:nth-child(2) {
+                        float: right;
+                    }
                 }
             }
         }
@@ -126,25 +158,31 @@ footer {
         /* Footer entregas em domicilio */
 
         .entregas-em-domicilio {
-            min-width: 350px;
+            width: auto;
             margin: 60px 0;
 
             .entregas {
                 text-align: left;
+                width: 100%;
 
                 ul li {
                     display: inline-block;
-                    vertical-align: middle;
+                    vertical-align: top;
                     text-transform: uppercase;
                     font-weight: 500;
+                    font-size: 0.875em;
+                }
+
+                ul:nth-child(1) li {
+                    font-size: 16px;
                 }
 
                 /* Entregas icons images */
 
                 li.carrinho {
                     img {
-                        width: 176px;
-                        height: 86px;
+                        width: 70%;
+                        height: auto;
                         float: right;
                     }
                     &::after {
@@ -166,12 +204,10 @@ footer {
         /* Footer Aceitamos cartôes */
 
         .aceitamos-cartoes {
-            min-width: 320px;
-            padding-left: 30px;
-            border-left: 1px solid green;
+            width: auto;
 
             img {
-                width: 90%;
+                width: 100%;
                 float: left;
             }
             p {
@@ -198,8 +234,6 @@ footer {
             font-size: 0.675em;
         }
         img {
-            /* width: 190px;
-            height: 78px;*/
             width: 87px;
             height: 35px;
         }
