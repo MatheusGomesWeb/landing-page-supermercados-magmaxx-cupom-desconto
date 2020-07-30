@@ -1,0 +1,1 @@
+$(function(){$("#dtNascimento").mask("00/00/0000"),$("#rg").mask("00.000.000-0"),$("#cpf").mask("000.000.000-00",{reverse:!0}),$("#cep").mask("00000-000"),$("#telefone").mask("(00) 0000-0000"),$("#celular").mask("(00) 0000-0000")});

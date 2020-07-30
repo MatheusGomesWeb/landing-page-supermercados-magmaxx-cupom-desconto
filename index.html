@@ -27,7 +27,7 @@
             <!--header-title-->
 
             <div class="header-btn-pagedown">
-                <img src="public/img/arrow.png" alt="Page Down">
+               <a href="#flex-wrapper"> <img src="public/img/arrow.png" alt="Page Down"> </a>
             </div>
             <!--btn-pagedown-->
 
@@ -54,7 +54,7 @@
             <!--main-title-->
             <form action="#" id="formCadastro">
 
-                <input type="text" name="nome" id="nome" placeholder="Nome" required>
+                <input type="text" name="nome" id="nome" placeholder="Nome" required maxlength="100">
 
                 <div class="input-size">
 
@@ -74,17 +74,17 @@
 
                     <input type="text" name="rg" id="rg" placeholder="RG" required>
                     <input type="text" name="cpf" id="cpf" placeholder="CPF" required>
-                    <input type="text" name="endereco" id="endereco" placeholder="Endereço">
-                    <input type="text" name="numero" id="numero" placeholder="Número">
+                    <input type="text" name="endereco" id="endereco" placeholder="Endereço" maxlength="100">
+                    <input type="text" name="numero" id="numero" placeholder="Número" maxlength="8">
                     <input type="text" name="cep" id="cep" placeholder="CEP">
-                    <input type="text" name="bairro" id="bairro" placeholder="Bairro">
+                    <input type="text" name="bairro" id="bairro" placeholder="Bairro" maxlength="50">
 
                 </div>
                 <!--input size-->
 
                 <input type="text" name="telefone" id="telefone" placeholder="Telefone">
                 <input type="tel" name="celular" id="celular" placeholder="Celular">
-                <input type="email" name="email" id="email" placeholder="E-mail" required>
+                <input type="email" name="email" id="email" placeholder="E-mail" required maxlength="100">
 
                 <div class="form-checkbox-submit">
 
@@ -233,7 +233,8 @@
     <!--javascripts-->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
-    <script src="public/js/functions.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+    <script src="public/js/functions-min.js"></script>
 
 </body>
 

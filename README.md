@@ -10,6 +10,11 @@
 - Mobile First (Responsivo)
 - Compativel com todos os browsers.
 
+## Plugins
+
+- JQuery
+- JQuery Mask
+
 ## Tecnologias
 
 ![HTML5](https://img.icons8.com/color/96/000000/html-5.png)
