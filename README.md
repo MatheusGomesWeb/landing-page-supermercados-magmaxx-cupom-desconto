@@ -4,7 +4,9 @@
 
 [<img src="https://img.shields.io/badge/🌐%20LIVE%20PREVIEW:-51487f?style=flat-square"/>](https://matheusgomesweb.github.io/clube-magmaxx-cupom-desconto/)
 
-[<img src="https://i.imgur.com/xtYjDWY.png" width="320px" height="auto"/>](https://matheusgomesweb.github.io/clube-magmaxx-cupom-desconto/)
+[<img src="https://i.imgur.com/arIsyYu.png" width="320px" height="auto"/>]
+
+[<img src="https://i.imgur.com/Jg4nJKt.png" width="320px" height="auto"/>]
 
 </div>
 
