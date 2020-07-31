@@ -16,7 +16,7 @@ Landing Page para Cadastro de Cupom de Desconto dos **Supermercados Magmaxx**
 
 ## Tecnologias
 
-<img src="https://img.icons8.com/color/96/000000/html-5.png" alt="html5" width="46px"/><img src="https://img.icons8.com/color/96/000000/css3.png" alt="css3" width="46px"/><img src="https://img.icons8.com/color/96/000000/javascript.png" alt="javascript" width="46px"/><img src="https://img.icons8.com/ios/100/000000/jquery.png" alt="jquery" width="46px"/><img src="https://img.icons8.com/color/96/000000/sass.png" alt="sass" width="46px"/><img src="https://cdn.iconscout.com/icon/free/png-64/gulp-1-282455.png" alt="gulp" width="46px"/><img src="https://img.icons8.com/color/96/000000/git.png" alt="git" width="46px"/><img src="https://img.icons8.com/officel/80/000000/media-queries.png" alt="mobile first" width="46px"/>
+<img src="https://image.flaticon.com/icons/svg/919/919827.svg" alt="html5" width="96px"/><img src="https://image.flaticon.com/icons/svg/919/919826.svg" alt="css3" width="96px"/><img src="https://img.icons8.com/color/96/000000/javascript.png" alt="javascript" width="96px"/><img src="https://cdn.iconscout.com/icon/free/png-256/jquery-10-1175155.png" alt="jquery" width="96px"/><img src="https://img.icons8.com/color/96/000000/sass.png" alt="sass" width="96px"/><img src="https://cdn.iconscout.com/icon/free/png-256/gulp-226000.png" alt="gulp" width="96px"/><img src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/141_Git_logo_logos-512.png" alt="git" width="96px"/><img src="https://cdn.iconscout.com/icon/free/png-256/responsive-35-454874.png" alt="mobile first" width="96px"/>
 
 ## Otimizações
 
