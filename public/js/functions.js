@@ -9,4 +9,11 @@ $(function () {
     $("#telefone").mask('(00) 0000-0000')
     $("#celular").mask('(00) 0000-0000');
 
+
+    /* Window Resizer */
+
+    $(window).resize(function () {
+        location.reload();
+    });
+
 });
