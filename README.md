@@ -16,14 +16,7 @@ Landing Page para Cadastro de Cupom de Desconto dos **Supermercados Magmaxx**
 
 ## Tecnologias
 
-![HTML5](https://img.icons8.com/color/96/000000/html-5.png)
-![CSS3](https://img.icons8.com/color/96/000000/css3.png)
-![CSS3](https://img.icons8.com/color/96/000000/javascript.png)
-![CSS3](https://img.icons8.com/ios/100/000000/jquery.png)
-![CSS3](https://img.icons8.com/color/96/000000/sass.png)
-![CSS3](https://cdn.iconscout.com/icon/free/png-64/gulp-1-282455.png)
-![CSS3](https://img.icons8.com/color/96/000000/git.png)
-![CSS3](https://img.icons8.com/officel/80/000000/media-queries.png)
+<img src="https://img.icons8.com/color/96/000000/html-5.png" alt="html5"/><img src="https://img.icons8.com/color/96/000000/css3.png" alt="css3"/><img src="https://img.icons8.com/color/96/000000/javascript.png" alt="javascript"/><img src="https://img.icons8.com/ios/100/000000/jquery.png" alt="jquery"/><img src="https://img.icons8.com/color/96/000000/sass.png" alt="sass"/><img src="https://cdn.iconscout.com/icon/free/png-64/gulp-1-282455.png" alt="gulp"/><img src="https://img.icons8.com/color/96/000000/git.png" alt="git"/><img src="https://img.icons8.com/officel/80/000000/media-queries.png" alt="mobile first"/>
 
 ## Otimizações
 
