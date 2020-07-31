@@ -7,7 +7,7 @@
 </p
   
 <p>  
-<img src="https://i.imgur.com/mjRMGiV.png" alt="Magmaxx Cupom de Desconto"/>
+<img src="https://i.imgur.com/cTkJhHw.png" alt="Magmaxx Cupom de Desconto"/>
 </p>
 
 ## Sobre
