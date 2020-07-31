@@ -1,18 +1,18 @@
-<h1 align="center"> Clube Magmaxx Cupom Desconto</h1>
+<h1 align="center">Landing Page dos Supermercados Magmaxx para Cadastrar Cupom de Desconto</h1>
 
 <br>
 
 <p align="center">
-<a href="https://matheusgomesweb.github.io/clube-magmaxx-cupom-desconto/" target="_blank"/><img src="https://img.shields.io/badge/🌐%20LIVE%20PREVIEW:-51487f?style=flat-square"/></a>
+<a href="https://matheusgomesweb.github.io/landing-page-supermercados-magmaxx-cupom-desconto" target="_blank"/><img src="https://img.shields.io/badge/🌐%20LIVE%20PREVIEW:-51487f?style=flat-square"/></a>
 </p
   
 <p>  
-<img src="https://i.imgur.com/cTkJhHw.png" alt="Magmaxx Cupom de Desconto"/>
+<img src="https://i.imgur.com/cTkJhHw.png" alt="Landing Page dos Supermercados Magmaxx para Cadastrar Cupom de Desconto"/>
 </p>
 
 ## Sobre
 
-Landing Page da Promoção Cupom de Desconto **Supermercados Magmaxx**
+Landing Page para Cadastro de Cupom de Desconto dos **Supermercados Magmaxx**
 
 ## Tecnologias
 
