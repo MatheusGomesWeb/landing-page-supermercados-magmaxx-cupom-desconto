@@ -1,10 +1,10 @@
-<h1 style="text-align:center;"> Clube Magmaxx Cupom Desconto</h1>
+<h1 align="center"> Clube Magmaxx Cupom Desconto</h1>
 
-<p style="text-align:center;">
+<p align="center">
 
 [<img src="https://img.shields.io/badge/🌐%20LIVE%20PREVIEW:-51487f?style=flat-square"/>](https://matheusgomesweb.github.io/clube-magmaxx-cupom-desconto/)
 
-https://i.imgur.com/mjRMGiV.png
+[<img src="https://i.imgur.com/mjRMGiV.png" alt="Magmaxx Cupom de Desconto"/>]()
 
 </p>
 
