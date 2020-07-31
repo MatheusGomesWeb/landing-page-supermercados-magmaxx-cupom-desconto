@@ -33,11 +33,11 @@ Landing Page para Cadastro de Cupom de Desconto dos **Supermercados Magmaxx**
 
 ## Google PageSpeed Insights - Performance
 
-[<img src="https://www.gstatic.com/images/icons/material/product/2x/pagespeed_64dp.png" width="46px"/>](https://developers.google.com/speed/pagespeed/insights/?hl=pt-br&url=https%3A%2F%2Fmatheusgomesweb.github.io%2Fclube-magmaxx-cupom-desconto%2F&tab=desktop)
+[<img src="https://www.gstatic.com/images/icons/material/product/2x/pagespeed_64dp.png" width="46px"/>](https://developers.google.com/speed/pagespeed/insights/?hl=pt-br&url=https%3A%2F%2Fmatheusgomesweb.github.io%2Flanding-page-supermercados-magmaxx-cupom-desconto%2F&tab=desktop)
 
 - **Desktop** - 92%
 - **Mobile** - 75%
 
 ## Website Validado pelo site **W3C**
 
-[<img style="border:0;width:46px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss-blue" alt="CSS válido!" />](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fmatheusgomesweb.github.io%2Fclube-magmaxx-cupom-desconto%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=pt-BR)
+[<img style="border:0;width:46px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss-blue" alt="CSS válido!" />](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fmatheusgomesweb.github.io%2Flanding-page-supermercados-magmaxx-cupom-desconto%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=pt-BR)
