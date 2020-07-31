@@ -1,10 +1,12 @@
 <h1 align="center"> Clube Magmaxx Cupom Desconto</h1>
 
+<br>
+
 <p align="center">
-<a href="https://matheusgomesweb.github.io/clube-magmaxx-cupom-desconto/" target="_blank"><img src="https://img.shields.io/badge/🌐%20LIVE%20PREVIEW:-51487f?style=flat-square"/></a>
+<a href="https://matheusgomesweb.github.io/clube-magmaxx-cupom-desconto/" target="_blank"/><img src="https://img.shields.io/badge/🌐%20LIVE%20PREVIEW:-51487f?style=flat-square"/></a>
 </p
   
-<p align="center">  
+<p>  
 <img src="https://i.imgur.com/mjRMGiV.png" alt="Magmaxx Cupom de Desconto"/>
 </p>
 
