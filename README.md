@@ -14,6 +14,10 @@
 </p>
 
 <p align="center"><b>Concluído</b> :heavy_check_mark:</p>
+
+<p align="center">
+  <a href="https://matheusgomesweb.github.io/landing-page-supermercados-magmaxx-cupom-desconto" target="_blank"/><img src="https://img.shields.io/badge/🌐%20LIVE%20PREVIEW-51487f?style=flat-square"/></a>
+</p>
   
 <p align="center">
  <a href="#computer-sobre">Sobre</a> •
@@ -29,8 +33,6 @@
 ## :computer: Sobre
 
 Landing Page para Cadastro de Cupom de Desconto dos **Supermercados Magmaxx**
-
-<a href="https://matheusgomesweb.github.io/landing-page-supermercados-magmaxx-cupom-desconto" target="_blank"/><img src="https://img.shields.io/badge/🌐%20LIVE%20PREVIEW:-51487f?style=flat-square"/></a>
 
 ## :hammer: Tecnologias
 
