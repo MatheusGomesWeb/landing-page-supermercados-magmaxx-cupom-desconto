@@ -19,7 +19,7 @@
  <a href="#otimizações">Otimizações</a> • 
  <a href="#plugins">Plugins</a> • 
  <a href="#performance">Performance</a> • 
- <a href="#w3c">W3c</a> • 
+ <a href="#w3c">W3C</a> • 
  <a href="#autor">Autor</a> • 
  <a href="#licença">Licença</a>
 </p>
@@ -27,6 +27,10 @@
 ## Sobre
 
 Landing Page para Cadastro de Cupom de Desconto dos **Supermercados Magmaxx**
+
+**Status**: Concluido
+
+<a href="https://matheusgomesweb.github.io/landing-page-supermercados-magmaxx-cupom-desconto" target="_blank"/><img src="https://img.shields.io/badge/🌐%20LIVE%20PREVIEW:-51487f?style=flat-square"/></a>
 
 ## Tecnologias
 
