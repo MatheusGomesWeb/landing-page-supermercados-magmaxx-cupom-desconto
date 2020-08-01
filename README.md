@@ -3,17 +3,16 @@
 <img src="https://i.imgur.com/cTkJhHw.png" alt="Landing Page dos Supermercados Magmaxx para Cadastrar Cupom de Desconto"/>
 </p>
 
-<h3 align="center">
-  Landing Page dos Supermercados Magmaxx para Cadastrar Cupom de Desconto 🚀
-  
-  <br>
-  
-  <a href="https://matheusgomesweb.github.io/landing-page-supermercados-magmaxx-cupom-desconto" target="_blank"/>
-    <img src="https://img.shields.io/badge/🌐%20LIVE%20PREVIEW:-51487f?style=flat-square"/>
-  </a>
-  
-</h3>
+<h1 align="center">
+  <a href="https://matheusgomesweb.github.io/landing-page-supermercados-magmaxx-cupom-desconto">
+    🔗 Landing Page dos Supermercados Magmaxx para Cadastrar Cupom de Desconto
+  </a> 
+</h1>
 
+<p align="center">
+Landing Page para Cadastro de Cupom de Desconto dos **Supermercados Magmaxx**  
+</p>
+  
 ## 💻 Sobre
 
 Landing Page para Cadastro de Cupom de Desconto dos **Supermercados Magmaxx**
