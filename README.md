@@ -10,33 +10,31 @@
 </h1>
 
 <p align="center">
-  Landing Page para Cadastro de Cupom de Desconto dos <strong>Supermercados Magmaxx</strong>  
+  Landing Page para Cadastro de Cupom de Desconto dos <strong>Supermercados Magmaxx</strong> :heavy_check_mark:
 </p>
   
 <p align="center">
- <a href="#sobre">Sobre</a> •
- <a href="#rocket-tecnologias">Tecnologias</a> • 
- <a href="#otimizações">Otimizações</a> • 
+ <a href="#computer-sobre">Sobre</a> •
+ <a href="#hammer-tecnologias">Tecnologias</a> • 
+ <a href="#wrench-otimizações">Otimizações</a> • 
  <a href="#plugins">Plugins</a> • 
- <a href="#performance">Performance</a> • 
+ <a href="#rocket-performance">Performance</a> • 
  <a href="#w3c">W3C</a> • 
  <a href="#autor">Autor</a> • 
  <a href="#memo-licença">Licença</a>
 </p>
 
-## Sobre
+## :computer: Sobre
 
 Landing Page para Cadastro de Cupom de Desconto dos **Supermercados Magmaxx**
 
-**Status**: Concluido
-
 <a href="https://matheusgomesweb.github.io/landing-page-supermercados-magmaxx-cupom-desconto" target="_blank"/><img src="https://img.shields.io/badge/🌐%20LIVE%20PREVIEW:-51487f?style=flat-square"/></a>
 
-## :rocket: Tecnologias
+## :hammer: Tecnologias
 
 <img src="https://image.flaticon.com/icons/svg/919/919827.svg" alt="html5" width="96px"/><img src="https://image.flaticon.com/icons/svg/919/919826.svg" alt="css3" width="96px"/><img src="https://img.icons8.com/color/96/000000/javascript.png" alt="javascript" width="96px"/><img src="https://cdn.iconscout.com/icon/free/png-256/jquery-10-1175155.png" alt="jquery" width="96px"/><img src="https://img.icons8.com/color/96/000000/sass.png" alt="sass" width="96px"/><img src="https://cdn.iconscout.com/icon/free/png-256/gulp-226000.png" alt="gulp" width="96px"/><img src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/141_Git_logo_logos-512.png" alt="git" width="96px"/><img src="https://cdn.iconscout.com/icon/free/png-256/responsive-35-454874.png" alt="mobile first" width="96px"/>
 
-## Otimizações
+## :wrench: Otimizações
 
 - Imagens minificadas
 - Css minificado
@@ -49,7 +47,7 @@ Landing Page para Cadastro de Cupom de Desconto dos **Supermercados Magmaxx**
 - JQuery
 - JQuery Mask
 
-## Performance
+## :rocket: Performance
 
 [<img src="https://www.gstatic.com/images/icons/material/product/2x/pagespeed_64dp.png" width="46px"/>](https://developers.google.com/speed/pagespeed/insights/?hl=pt-br&url=https%3A%2F%2Fmatheusgomesweb.github.io%2Flanding-page-supermercados-magmaxx-cupom-desconto%2F&tab=desktop)
 
