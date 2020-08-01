@@ -15,13 +15,13 @@
   
 <p align="center">
  <a href="#sobre">Sobre</a> •
- <a href="#tecnologias">Tecnologias</a> • 
+ <a href="#rocket-tecnologias">Tecnologias</a> • 
  <a href="#otimizações">Otimizações</a> • 
  <a href="#plugins">Plugins</a> • 
  <a href="#performance">Performance</a> • 
  <a href="#w3c">W3C</a> • 
  <a href="#autor">Autor</a> • 
- <a href="#licença">Licença</a>
+ <a href="#memo-licença">Licença</a>
 </p>
 
 ## Sobre
@@ -32,7 +32,7 @@ Landing Page para Cadastro de Cupom de Desconto dos **Supermercados Magmaxx**
 
 <a href="https://matheusgomesweb.github.io/landing-page-supermercados-magmaxx-cupom-desconto" target="_blank"/><img src="https://img.shields.io/badge/🌐%20LIVE%20PREVIEW:-51487f?style=flat-square"/></a>
 
-## Tecnologias
+## :rocket: Tecnologias
 
 <img src="https://image.flaticon.com/icons/svg/919/919827.svg" alt="html5" width="96px"/><img src="https://image.flaticon.com/icons/svg/919/919826.svg" alt="css3" width="96px"/><img src="https://img.icons8.com/color/96/000000/javascript.png" alt="javascript" width="96px"/><img src="https://cdn.iconscout.com/icon/free/png-256/jquery-10-1175155.png" alt="jquery" width="96px"/><img src="https://img.icons8.com/color/96/000000/sass.png" alt="sass" width="96px"/><img src="https://cdn.iconscout.com/icon/free/png-256/gulp-226000.png" alt="gulp" width="96px"/><img src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/141_Git_logo_logos-512.png" alt="git" width="96px"/><img src="https://cdn.iconscout.com/icon/free/png-256/responsive-35-454874.png" alt="mobile first" width="96px"/>
 
@@ -62,8 +62,16 @@ Landing Page para Cadastro de Cupom de Desconto dos **Supermercados Magmaxx**
 
 ## Autor
 
-**Matheus Gomes** Desenvolvedor
+<a href="https://github.com/MatheusGomesWeb">
+ <img style="border-radius: 50%;" src="https://avatars3.githubusercontent.com/u/12579898?s=96&v=4" width="100px;" alt=""/>
+ <br />
+ <sub><b>Matheus Gomes</b></sub></a> <a href="https://github.com/MatheusGomesWeb" title="Matheus Gomes Web">🚀</a>
 
-## Licença
+
+Feito com ❤️ por Matheus Gomes 👋🏽 Entre em contato!
+
+[![Linkedin Badge](https://img.shields.io/badge/-Thiago-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/matheusgomes/)](https://www.linkedin.com/in/matheusgomes/)
+
+## :memo: Licença
 
 [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)
