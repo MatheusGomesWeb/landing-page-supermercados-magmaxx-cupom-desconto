@@ -30,11 +30,11 @@
  <a href="#memo-licença">Licença</a>
 </p>
 
-## :computer: Sobre
+### :computer: Sobre
 
 Landing Page para Cadastro de Cupom de Desconto dos **Supermercados Magmaxx**
 
-## :hammer: Tecnologias
+### :hammer: Tecnologias
 
 - [HTML5](https://developer.mozilla.org/pt-BR/docs/Web/HTML/HTML5)
 - [CSS3](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
@@ -44,7 +44,7 @@ Landing Page para Cadastro de Cupom de Desconto dos **Supermercados Magmaxx**
 - [GULP](https://gulpjs.com/)
 - [DESIGN RESPONSIVO - MOBILE FIRST](https://www.hostgator.com.br/blog/mobile-first-o-que-e/)
 
-## :wrench: Otimizações
+### :wrench: Otimizações
 
 - Imagens minificadas
 - Css minificado
@@ -52,23 +52,23 @@ Landing Page para Cadastro de Cupom de Desconto dos **Supermercados Magmaxx**
 - Mobile First (Responsivo) 📱
 - Compativel com todos os browsers.
 
-## Plugins
+### Plugins
 
 - JQuery
 - JQuery Mask
 
-## :rocket: Performance
+### :rocket: Performance
 
 [<img src="https://www.gstatic.com/images/icons/material/product/2x/pagespeed_64dp.png" width="46px"/>](https://developers.google.com/speed/pagespeed/insights/?hl=pt-br&url=https%3A%2F%2Fmatheusgomesweb.github.io%2Flanding-page-supermercados-magmaxx-cupom-desconto%2F&tab=desktop)
 
 - **Desktop** - 92%
 - **Mobile** - 75%
 
-## W3C
+### W3C
 
 [<img style="border:0;width:46px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss-blue" alt="CSS válido!" />](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fmatheusgomesweb.github.io%2Flanding-page-supermercados-magmaxx-cupom-desconto%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=pt-BR)
 
-## Autor
+### Autor
 
 <a href="https://github.com/MatheusGomesWeb">
  <img style="border-radius: 50%;" src="https://avatars3.githubusercontent.com/u/12579898?s=96&v=4" width="100px;" alt=""/>
@@ -79,6 +79,6 @@ Feito com ❤️ por Matheus Gomes 👋🏽 Entre em contato!
 
 [![Linkedin Badge](https://img.shields.io/badge/-Matheus-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/matheusgomes/)](https://www.linkedin.com/in/matheusgomes/)
 
-## :memo: Licença
+### :memo: Licença
 
 [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)
