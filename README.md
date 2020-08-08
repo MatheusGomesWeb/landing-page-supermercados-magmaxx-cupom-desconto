@@ -76,7 +76,7 @@ Landing Page para Cadastro de Cupom de Desconto dos **Supermercados Magmaxx**
  <sub><b>Matheus Gomes</b></sub></a> <a href="https://github.com/MatheusGomesWeb" title="Matheus Gomes Web">🚀</a>
  <br>
 Feito com ❤️ por Matheus Gomes 👋🏽 Entre em contato!
-
+<br>
 <a href="https://www.linkedin.com/in/matheusgomes/" target="_blank">
 <img src="https://img.shields.io/badge/-Matheus-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/matheusgomes/"/>
  </a>
