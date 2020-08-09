@@ -26,6 +26,10 @@ header {
                 height: 160px;
                 background-size: cover;
             }
+            &:hover {
+                opacity: 0.9;
+                transition: ease-in 0.2s;
+            }
         }
     }
 
@@ -44,6 +48,10 @@ header {
             width: 77px;
             height: 78px;
             cursor: pointer;
+        }
+        &:hover {
+            opacity: 0.9;
+            transition: ease-in 0.2s;
         }
     }
 }
