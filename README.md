@@ -34,6 +34,8 @@
 
 Landing Page para Cadastro de Cupom de Desconto dos **Supermercados Magmaxx**
 
+___
+
 ### :hammer: Tecnologias
 
 - [HTML5](https://developer.mozilla.org/pt-BR/docs/Web/HTML/HTML5)
@@ -44,6 +46,8 @@ Landing Page para Cadastro de Cupom de Desconto dos **Supermercados Magmaxx**
 - [GULP](https://gulpjs.com/)
 - [DESIGN RESPONSIVO - MOBILE FIRST](https://www.hostgator.com.br/blog/mobile-first-o-que-e/)
 
+___
+
 ### :wrench: Otimizações
 
 - Imagens minificadas
@@ -52,10 +56,14 @@ Landing Page para Cadastro de Cupom de Desconto dos **Supermercados Magmaxx**
 - Mobile First (Responsivo) 📱
 - Compativel com todos os browsers.
 
+___
+
 ### Plugins
 
 - JQuery
 - JQuery Mask
+
+___
 
 ### :rocket: Performance
 
@@ -64,9 +72,13 @@ Landing Page para Cadastro de Cupom de Desconto dos **Supermercados Magmaxx**
 - **Desktop** - 92%
 - **Mobile** - 75%
 
+___
+
 ### W3C
 
 [<img style="border:0;width:46px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss-blue" alt="CSS válido!" />](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fmatheusgomesweb.github.io%2Flanding-page-supermercados-magmaxx-cupom-desconto%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=pt-BR)
+
+___
 
 ### Autor
 
@@ -87,6 +99,7 @@ Feito com ❤️ por Matheus Gomes 👋🏽 Entre em contato!
 <img src="https://img.shields.io/badge/-MatheusGomes-%234267b2?style=flat-square&logo=facebook&logoColor=white&link=https://www.facebook.com/matheusgomesrdj/"/>
 </a>
 
+___
 
 ### :memo: Licença
 
