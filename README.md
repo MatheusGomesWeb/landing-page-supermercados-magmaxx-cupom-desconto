@@ -1,77 +1,140 @@
-  
-<p align="center">  
-<img src="https://i.imgur.com/cTkJhHw.png" alt="Landing Page dos Supermercados Magmaxx para Cadastrar Cupom de Desconto"/>
-</p>
+<div align="center">  
+<img src="./readme/gulp.png" alt="Gulp" height="80"/>
+<img src="./readme/eslint.png" alt="Eslint" height="40"/>
+<img src="./readme/webpack.png" alt="Webpack" height="80"/>
+</div>
+
+<br>
 
 <h1 align="center">
-  <a href="https://matheusgomesweb.github.io/landing-page-supermercados-magmaxx-cupom-desconto">
-    🔗 Landing Page dos Supermercados Magmaxx
-  </a> 
+Tarefas Automatizadas Gulp
 </h1>
 
 <p align="center">
-  Landing Page para Cadastro de Cupom de Desconto dos <strong>Supermercados Magmaxx</strong> 
+  Minifique arquivos Sass, Depure erros de código JavaScript enquanto desenvolve, minifique e importe modulos e arquivos JavaScript, Reduza o tamanho das imagens, Monitore alterações em arquivos e imagens visualizando o resultado no Browser em tempo real com a ferramenta BrowserSync. 
 </p>
 
-<p align="center"><b>Concluído</b> :heavy_check_mark:</p>
+<p align="center"><b>Status</b> Finalizado</p>
 
 <p align="center">
-  <a href="https://matheusgomesweb.github.io/landing-page-supermercados-magmaxx-cupom-desconto" target="_blank"/><img src="https://img.shields.io/badge/🌐%20LIVE%20PREVIEW-51487f?style=flat-square"/></a>
-</p>
-  
-<p align="center">
- <a href="#computer-sobre">Sobre</a> •
- <a href="#hammer-tecnologias">Tecnologias</a> • 
- <a href="#wrench-otimizações">Otimizações</a> • 
- <a href="#plugins">Plugins</a> • 
- <a href="#rocket-performance">Performance</a> • 
- <a href="#w3c">W3C</a> • 
+ <a href="#bibliotecas-utilizadas">Bibliotecas Utilizadas</a> •
+ <a href="#pré-requisitos">Pré-Requisitos</a> •
+ <a href="#instalação">Instalação</a> • 
+ <a href="#configuração">Configurações</a> • 
+ <a href="#como-utilizar">Como Utilizar</a> • 
  <a href="#autor">Autor</a> • 
  <a href="#memo-licença">Licença</a>
 </p>
 
-## :computer: Sobre
+---
 
-Landing Page para Cadastro de Cupom de Desconto dos **Supermercados Magmaxx**
+## Ferramentas utilizadas
 
-## :hammer: Tecnologias
+- [Imagemin](https://www.npmjs.com/package/gulp-imagemin)
+- [Sass](https://www.npmjs.com/package/gulp-sass)
+- [Concat](https://www.npmjs.com/package/gulp-concat)
+- [AutoPrefixer](https://www.npmjs.com/package/gulp-autoprefixer)
+- [BrowserSync](https://www.npmjs.com/package/browser-sync)
+- [Webpack](https://webpack.js.org/)
+- [Eslint](https://eslint.org/docs/user-guide/getting-started)
 
-<img src="https://image.flaticon.com/icons/svg/919/919827.svg" alt="html5" width="96px"/><img src="https://image.flaticon.com/icons/svg/919/919826.svg" alt="css3" width="96px"/><img src="https://img.icons8.com/color/96/000000/javascript.png" alt="javascript" width="96px"/><img src="https://cdn.iconscout.com/icon/free/png-256/jquery-10-1175155.png" alt="jquery" width="96px"/><img src="https://img.icons8.com/color/96/000000/sass.png" alt="sass" width="96px"/><img src="https://cdn.iconscout.com/icon/free/png-256/gulp-226000.png" alt="gulp" width="96px"/><img src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/141_Git_logo_logos-512.png" alt="git" width="96px"/><img src="https://cdn.iconscout.com/icon/free/png-256/responsive-35-454874.png" alt="mobile first" width="96px"/>
+---
 
-## :wrench: Otimizações
+## Pré-Requisitos
 
-- Imagens minificadas
-- Css minificado
-- Javascript minificado
-- Mobile First (Responsivo) 📱
-- Compativel com todos os browsers.
+- [Node.js](https://nodejs.org/en/)
+- [NPM](https://www.npmjs.com/) ou [Yarn](https://yarnpkg.com/)
+- Básico de [Gulp](https://gulpjs.com/)
 
-## Plugins
+---
 
-- JQuery
-- JQuery Mask
+## Instalação
 
-## :rocket: Performance
+Supondo que você já tenha o **Node.js** e um gerenciador de pacotes como **NPM** ou **Yarn** instalado no seu computador, siga os passos seguintes.
 
-[<img src="https://www.gstatic.com/images/icons/material/product/2x/pagespeed_64dp.png" width="46px"/>](https://developers.google.com/speed/pagespeed/insights/?hl=pt-br&url=https%3A%2F%2Fmatheusgomesweb.github.io%2Flanding-page-supermercados-magmaxx-cupom-desconto%2F&tab=desktop)
+---
 
-- **Desktop** - 92%
-- **Mobile** - 75%
+### Baixe ou Clone o Repositório
 
-## W3C
+```
+git clone https://github.com/MatheusGomesWeb/minhas-taferas-automatizadas-gulp.git
+```
 
-[<img style="border:0;width:46px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss-blue" alt="CSS válido!" />](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fmatheusgomesweb.github.io%2Flanding-page-supermercados-magmaxx-cupom-desconto%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=pt-BR)
+---
+
+### Instale as dependencias do projeto
+
+```
+NPM -> npm install
+```
+
+```
+YARN -> yarn install
+```
+
+---
+
+## Configuração
+
+Todas as configurações estão localizadas no arquivo **settings.js**.
+
+```
+src: Caminho para os arquivos de desenvolvimento do projeto
+dist: Caminho para os arquivos de distribuição (final) do projeto.
+```
+
+---
+
+## Como Utilizar
+
+### Tarefas Gulp
+
+```
+// Para visualizar todas as tarefas digite:
+
+gulp -T ou gulp
+```
+
+- Para executar uma tarefa digite:
+  > gulp < nometarefa >
+- **browserSync**: Inicia um servidor com **LiveReload**.
+- **watch**: Monitora todos os arquivos .html, .scss, e imagens, caso tenha alguma alteração ele compila, minifica, ou reduz o tamanho dos arquivos / imagens de acordo com a ação realizada.
+- **minifyImages**: Reduz (minifica o tamanho das imagens)
+- **minifySass**: Junta arquivos sass, adiciona prefixos dos browsers e gera arquivo css final minificado.
+
+---
+
+### Tarefas Webpack
+
+Para configurar o caminho dos arquivos que desenvolvimento, modifique o arquivo webpack.config.js
+
+- **Comandos Webpack**
+
+- > npm run build - Gera o arquivo final para produção (otimizado)
+- > npm run dev - Gera arquivo de desenvolvimento (não otimizado)
+
+---
 
 ## Autor
 
 <a href="https://github.com/MatheusGomesWeb">
- <img style="border-radius: 50%;" src="https://avatars3.githubusercontent.com/u/12579898?s=96&v=4" width="100px;" alt=""/>
+ <img style="border-radius: 50%; " src="https://avatars3.githubusercontent.com/u/12579898?s=96&v=4" width="100px; " alt=""/>
  <br />
  <sub><b>Matheus Gomes</b></sub></a> <a href="https://github.com/MatheusGomesWeb" title="Matheus Gomes Web">🚀</a>
- 
+ <br>
 Feito com ❤️ por Matheus Gomes 👋🏽 Entre em contato!
+<br>
+<a href="https://www.linkedin.com/in/matheusgomes/" target="_blank">
+<img src="https://img.shields.io/badge/-Matheus-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/matheusgomes/"/>
+ </a>
+ <a href="https://twitter.com/MatheusGomesWeb" target="_blank">
+<img alt="twitter Matheus Gomes" src="https://img.shields.io/badge/-@MatheusGomesWeb-%231ca0f1?style=flat-square&logo=twitter&logoColor=white&link=https://twitter.com/MatheusGomesWeb"/>
+ </a>
+ <a href="https://www.facebook.com/matheusgomesrdj/" target="_blank">
+<img src="https://img.shields.io/badge/-MatheusGomes-%234267b2?style=flat-square&logo=facebook&logoColor=white&link=https://www.facebook.com/matheusgomesrdj/"/>
+</a>
 
-[![Linkedin Badge](https://img.shields.io/badge/-Matheus-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/matheusgomes/)](https://www.linkedin.com/in/matheusgomes/)
+---
 
 ## :memo: Licença
 
