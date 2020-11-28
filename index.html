@@ -4,62 +4,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Clube Magmaxx - Cadastre-se para descontos e premios !">
     <title>Clube Magmaxx - Cadastre-se para descontos e premios !</title>
-    <link rel="shortcut icon" href="public/img/logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./dist/img/logo.png" type="image/x-icon">
     <!--stylesheets-->
-    <link href="public/css/style.min.css" rel="stylesheet">
+    <link href="./dist/css/style.min.css" rel="stylesheet">
 </head>
 
 <body>
 
     <header>
-
-        <div class="header-logo-wrapper">
-
-            <div class="header-logo">
-                <img src="public/img/logo.png" alt="Logo Magmaxx">
-            </div>
-            <!--header-logo-->
-
-            <div class="header-title">
-                <h3>CADASTRE-SE NO <br> CLUBE DO DESCONTO</h3>
-            </div>
-            <!--header-title-->
-
-            <div class="header-btn-pagedown">
-                <a href="#flex-wrapper">
-                    <img src="public/img/arrow.png" alt="Page Down">
-                </a>
-            </div>
-            <!--btn-pagedown-->
-
-        </div>
-        <!--header-logo-wrapper-->
-
+        <!--titulo-header-->
+        <img src="./dist/img/logo.png" alt="Logo Magmaxx" class="logo">
+        <h3>CADASTRE-SE NO <br> CLUBE DO DESCONTO</h3>
+        <a href="#">
+            <img src="./dist/img/arrow.png" alt="page down" class="page-down">
+        </a>
+        <!--titulo-header-->
     </header>
-    <!--header-->
 
-    <div id="flex-wrapper">
+    <main>
+        <!--titulo-principal-->
+        <section class="titulo-principal">
+            <h1>NO CLUBE DE DESCONTOS</h1>
 
-        <main>
+            <h3 class="titulo-destacado">você tem acesso á ofertas exclusivas</h3>
 
-            <div class="main-title">
-                <h1>NO CLUBE DE DESCONTOS</h1>
+            <h2>CADASTRE-SE JÁ!</h2>
+            <h6>PREENCHA CORRETAMENTE TODAS AS INFORMAÇÕES</h6>
+        </section>
+        <!--titulo-principal-->
 
-                <h3>você tem acesso á </h3>
-                <h3>ofertas exclusivas</h3>
-
-                <h2>CADASTRE-SE JÁ!</h2>
-                <h6>PREENCHA CORRETAMENTE TODAS AS INFORMAÇÕES</h6>
-
-            </div>
-            <!--main-title-->
-            <form action="#" id="formCadastro">
-
+        <!--formulário-->
+        <section class="formulario">
+            <form action="#">
                 <input type="text" name="nome" id="nome" placeholder="Nome" required maxlength="100">
 
-                <div class="input-size">
-
+                <!--formulario-inline-->
+                <div class="formulario-inline">
                     <input type="text" name="dtNascimento" id="dtNascimento" placeholder="Data de Nascimento" required>
 
                     <select name="sexo" id="sexo">
@@ -80,163 +62,94 @@
                     <input type="text" name="numero" id="numero" placeholder="Número" maxlength="8">
                     <input type="text" name="cep" id="cep" placeholder="CEP">
                     <input type="text" name="bairro" id="bairro" placeholder="Bairro" maxlength="50">
-
                 </div>
-                <!--input size-->
+                <!--formulario-inline-->
 
                 <input type="text" name="telefone" id="telefone" placeholder="Telefone">
                 <input type="tel" name="celular" id="celular" placeholder="Celular">
                 <input type="email" name="email" id="email" placeholder="E-mail" required maxlength="100">
 
-                <div class="form-checkbox-submit">
+                <!--formulario-inline-->
+                <div class="formulario-inline termos">
 
-                    <div class="termos">
-
-                        <input type="checkbox" name="lembrar" id="lembrar">
-
-                        <label for="lembrar">
-
-                            Aceito os <span style="color:#eb7b30;">termos</span>
-                            e condições e desejo me associar ao Clube de Descontos
-                            <span style="color:#eb7b30;">Magmaxx</span>
-
-                        </label>
-
+                    <div class="termos-inline">
+                        <div>
+                            <input type="checkbox" name="lembrar" id="lembrar">
+                        </div>
+                        <div>
+                            <label for="lembrar">
+                                Aceito os <a href="#">termos</a>
+                                e condições e desejo me associar ao Clube de Descontos
+                                <a href="#">Magmaxx</a>
+                            </label>
+                        </div>
                     </div>
-                    <!--termos-->
 
-                    <input type="submit" value="cadastrar">
-
+                    <div>
+                        <input type="submit" value="cadastrar" id="enviar">
+                    </div>
                 </div>
-                <!--form-checkbox-submit-->
-
+                <!--formulario-inline-->
             </form>
-            <!--formulario-->
-        </main>
-        <!--main-->
+        </section>
+        <!--formulário-->
+    </main>
 
-        <footer>
 
-            <div class="sobre-footer">
+    <!--footer-->
+    <footer>
+        <!--nossas-lojas-->
+        <div class="nossas-lojas">
+            <h4>nossas lojas</h4>
 
-                <div class="nossas-lojas">
+            <ul>
+                <li>
+                    <span>pariquera-açu</span>
+                    <span>loja 01</span>
+                </li>
+                <li>Av. Dr. Carlos Botello, 627 - Centro</li>
+                <li>Tel.: (13) 3856-1930</li>
+            </ul>
 
-                    <h6 style="text-align: center;">Nossas Lojas</h6>
+            <ul>
+                <li>
+                    <span>iguape</span>
+                    <span>loja 02</span>
+                </li>
 
-                    <ul class="lojas">
+                <li>R. Euclydes Roque Bastos, 12 - Centro</li>
+                <li>Tel.: (13) 3841-1123</li>
+            </ul>
 
-                        <li>
-                            <span>pariquera-açu</span>
-                            <span>loja 01</span>
-                        </li>
+            <ul>
+                <li>
+                    <span>pariquera-açu</span>
+                    <span>loja 03</span>
+                </li>
 
-                        <li>Av. Dr. Carlos Botello, 627 - Centro</li>
-                        <li>Tel.: (13) 3856-1930</li>
+                <li>Av. Dr Carlos Botello, 260 - Centro</li>
+                <li>Tel.: (13) 3856-1032</li>
+            </ul>
 
-                    </ul>
+        </div>
+        <!--nossas-lojas-->
 
-                    <ul class="lojas" style="margin: 20px 0;">
+        <!--entregas-em-domicilio-->
+        <div class="entregas-em-domicilio">
+            <h4>entregas em domicílio</h4>
+        </div>
+        <!--entregas-em-domicilio-->
 
-                        <li>
-                            <span>iguape</span>
-                            <span>loja 02</span>
-                        </li>
-
-                        <li>R. Euclydes Roque Bastos, 12 - Centro</li>
-                        <li>Tel.: (13) 3841-1123</li>
-
-                    </ul>
-
-                    <ul class="lojas">
-
-                        <li>
-                            <span>pariquera-açu</span>
-                            <span>loja 03</span>
-                        </li>
-
-                        <li>Av. Dr Carlos Botello, 260 - Centro</li>
-                        <li>Tel.: (13) 3856-1032</li>
-
-                    </ul>
-
-                </div>
-                <!--nossas-lojas-->
-
-                <div class="divider"></div>
-                <!--divider-->
-
-                <div class="entregas-em-domicilio">
-
-                    <h6 style="text-align: left;">Entregas em Domicílio</h6>
-
-                    <div class="entregas">
-
-                        <ul>
-                            <li style="text-transform: initial; float: left;">verifique <br> disponibilidade <br> e
-                                condições <br> em cada loja</li>
-                            <li class="carrinho"><img src="public/img/carrinho.png" alt="entregas"></li>
-                        </ul>
-
-                        <ul>
-                            <li><img src="public/img/ico-facebook.png" alt="facebook" class="ico-facebook"></li>
-                            <li>supermercadomagmax</li>
-                        </ul>
-
-                        <ul>
-                            <li><img src="public/img/ico-instagram.png" alt="instagram" class="ico-instagram"></li>
-                            <li>supermercadomagmax</li>
-                        </ul>
-
-                        <ul>
-                            <li><img src="public/img/ico-site.png" alt="website" class="ico-site"></li>
-                            <li>http://magmaxx.com.br</li>
-                        </ul>
-
-                    </div>
-                    <!--entregas-->
-
-                </div>
-                <!--entregas-em-domicilio-->
-
-                <div class="divider"></div>
-                <!--divider-->
-
-                <div class="aceitamos-cartoes">
-
-                    <h6>Aceitamos cartôes</h6>
-
-                    <img src="public/img/pagamentos.png" alt="cartoes">
-
-                    <p>consulte as outras opções</p>
-
-                </div>
-                <!--aceitamos-cartoes-->
-
-            </div>
-            <!--sobre-footer-->
-
-            <div class="sub-footer">
-
-                <p>
-                    Todos os direitos reservados <strong>Magmaxx</strong>
-                </p>
-
-                <img src="public/img/logocr.png" alt="logocrcom">
-
-            </div>
-            <!--sub-footer-->
-
-        </footer>
-        <!--footer-->
-
-    </div>
-    <!--flex-wrapper-->
+        <!--aceitamos-cartoes-->
+        <div class="aceitamos-cartoes">
+            <h4>Aceitamos cartôes</h4>
+        </div>
+        <!--aceitamos-cartoes-->
+    </footer>
+    <!--footer-->
 
     <!--javascripts-->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
-    <script src="public/js/functions-min.js"></script>
+    <script src="./dist/js/bundle.js"></script>
 
 </body>
 
