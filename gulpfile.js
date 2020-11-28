@@ -23,7 +23,7 @@ const settings = require('./settings.js');
 // Minificar Imagens - Gulp-Imagemin
 function minifyImages(callback) {
   gulp
-    .src(settings.src.images + '**')
+    .src(settings.src.images + '*')
     .pipe(gulp_imagemin())
     .pipe(gulp.dest(settings.dist.images))
     .pipe(browser_sync.stream());
@@ -58,7 +58,7 @@ function watch() {
   gulp.watch(settings.src.sass + '*.scss').on('change', minifySass);
 
   // Monitorando Imagens
-  gulp.watch(settings.src.images + '**').on('change', minifyImages);
+  gulp.watch(settings.src.images + '*', minifyImages);
 
   // Monitorando Html
   gulp.watch('./*.html').on('change', browser_sync.reload);

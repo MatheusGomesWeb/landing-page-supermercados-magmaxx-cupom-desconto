@@ -1,0 +1,47 @@
+main {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 0;
+
+  // titulo principal
+  .titulo-principal {
+    text-align: center;
+    padding: 1rem 0;
+    padding-bottom: 2rem;
+
+    // titulo destacado - você tem acesso á ofertas exclusivas
+    .titulo-destacado {
+      background: var(--laranja);
+      color: var(--branco);
+      text-transform: uppercase;
+      font-weight: var(--regular);
+      display: inline-block;
+      padding: 0.3rem 0.5rem;
+      border-radius: 4px;
+      margin: 1rem 0;
+
+      @media (max-width: 768px) {
+        font-size: var(--media);
+        margin: 1rem 1.5rem;
+      }
+    }
+
+    // titulo grande - NO CLUBE DE DESCONTOS
+    h1 {
+      font-weight: var(--extraBold);
+      @media (max-width: 768px) {
+        font-size: var(--grande);
+      }
+    }
+
+    // titulo - CADASTRE-SE JÁ
+    h2 {
+      margin-bottom: 1rem;
+      font-weight: var(--extraBold);
+
+      @media (max-width: 768px) {
+        font-size: var(--extra-media);
+      }
+    }
+  }
+}

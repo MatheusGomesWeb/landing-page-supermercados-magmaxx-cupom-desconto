@@ -1,0 +1,51 @@
+header {
+  width: 100%;
+  height: 100vh;
+  background: url('../img/header-bg.jpg') no-repeat top right;
+  background-size: cover;
+  background-origin: border-box;
+  position: relative;
+  border-left: 1px solid var(--verde);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10vh;
+
+  @media (max-width: 768px) {
+    padding-top: 15vh;
+  }
+
+  // logo
+  .logo {
+    max-width: 425px;
+    height: 240px;
+
+    @media (max-width: 768px) {
+      max-width: 80%;
+      height: auto;
+    }
+  }
+
+  // titulo do topo
+  h3 {
+    text-align: center;
+    margin: 1rem 0;
+    font-size: var(--grande);
+    font-weight: var(--extraBold);
+
+    @media (max-width: 768px) {
+      font-size: var(--media);
+    }
+  }
+
+  // page-down
+  .page-down {
+    width: 97px;
+    height: 98px;
+
+    @media (max-width: 768px) {
+      width: 77px;
+      height: 78px;
+    }
+  }
+}

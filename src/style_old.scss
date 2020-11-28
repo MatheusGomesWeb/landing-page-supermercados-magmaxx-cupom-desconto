@@ -1,0 +1,249 @@
+/* Header */
+header {
+    background: url("../img/header-bg.jpg") no-repeat;
+    background-origin: border-box;
+    background-size: cover;
+    background-position: top right;
+    border-left: 1px solid $headerBorderLeftColor;
+    /*padding-top: 30px;*/
+    width: 100%;
+    height: 100%;
+    /*padding-top: 12.5%;*/
+
+    .header-logo-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 80%;
+
+        /* Header logo */
+        .header-logo {
+            text-align: center;
+            img {
+                width: 80%;
+                height: 160px;
+                background-size: cover;
+            }
+            &:hover {
+                opacity: 0.9;
+                transition: ease-in 0.2s;
+            }
+        }
+    }
+
+    /* Header Button Text */
+    .header-title {
+        color: $titleColor;
+        text-align: center;
+        margin: 15px 0;
+        line-height: 30px;
+    }
+
+    /* Header Button Page Down */
+    .header-btn-pagedown {
+        text-align: center;
+        img {
+            width: 77px;
+            height: 78px;
+            cursor: pointer;
+        }
+        &:hover {
+            opacity: 0.9;
+            transition: ease-in 0.2s;
+        }
+    }
+}
+
+/* Main */
+main {
+    width: 80%;
+    margin: 0 auto;
+
+    /* Main main-title */
+    .main-title {
+        text-align: center;
+        text-transform: uppercase;
+        h1,
+        h2 {
+            margin: 20px 0;
+        }
+
+        /* Main text with orange background */
+        h3 {
+            color: white;
+            font-family: $fontMontserrat;
+            font-weight: $fontMontserratWeightRegular;
+            background-color: #eb7323;
+            padding: 0 10px;
+            display: inline-block;
+            &:nth-child(3) {
+                margin-top: 5px;
+            }
+        }
+
+        /* Main text menor texto */
+        h6 {
+            font-family: $fontMontserrat;
+            font-weight: $fontMontserratWeightRegular;
+            font-size: 18px;
+        }
+    }
+}
+
+/* Footer */
+
+footer {
+    color: white;
+    padding: 0;
+
+    /* Divider */
+
+    .divider {
+        margin: 0 30px;
+        color: green;
+        display: none;
+        height: 40vh;
+        border-right: 1px solid #5fa553;
+        margin-top: 20px;
+    }
+
+    /* Footer sobre-footer */
+
+    .sobre-footer {
+        background-color: #d1742f;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding: 40px 10px 17vh 10px;
+        text-align: center;
+
+        h6 {
+            color: white;
+            text-transform: uppercase;
+            font-weight: $fontMontserratWeightRegular;
+            margin-bottom: 20px;
+            font-size: 18px;
+            text-align: left;
+        }
+
+        ul li {
+            list-style: none;
+            padding: 5px 10px;
+        }
+
+        /* Footer nossas-lojas */
+
+        .nossas-lojas {
+            color: white;
+            text-align: center;
+            width: auto;
+
+            ul.lojas {
+                li:nth-child(1) {
+                    background: #5fa553;
+                    padding: 5px 10px;
+                    margin-bottom: 10px;
+                    text-transform: uppercase;
+                    &::after {
+                        content: "";
+                        display: table;
+                        clear: both;
+                    }
+
+                    span:nth-child(1) {
+                        float: left;
+                    }
+                    span:nth-child(2) {
+                        float: right;
+                    }
+                }
+            }
+        }
+
+        /* Footer entregas em domicilio */
+
+        .entregas-em-domicilio {
+            width: auto;
+            margin: 60px 0;
+
+            .entregas {
+                text-align: left;
+                width: 100%;
+
+                ul li {
+                    display: inline-block;
+                    vertical-align: top;
+                    text-transform: uppercase;
+                    font-weight: 500;
+                    font-size: 0.875em;
+                }
+
+                ul:nth-child(1) li {
+                    font-size: 16px;
+                }
+
+                /* Entregas icons images */
+
+                li.carrinho {
+                    img {
+                        width: 70%;
+                        height: auto;
+                        float: right;
+                    }
+                    &::after {
+                        content: "";
+                        display: table;
+                        clear: both;
+                        margin-bottom: 20px;
+                    }
+                }
+                li .ico-facebook,
+                li .ico-site,
+                li .ico-instagram {
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+        }
+
+        /* Footer Aceitamos cartôes */
+
+        .aceitamos-cartoes {
+            width: auto;
+
+            img {
+                width: 100%;
+                float: left;
+            }
+            p {
+                text-align: left;
+                clear: both;
+                padding-top: 5px;
+            }
+        }
+    }
+
+    /* Footer sub-footer */
+
+    .sub-footer {
+        background: #60a549;
+        width: 100%;
+        height: auto;
+        text-align: center;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 30px 10px;
+        p {
+            text-transform: uppercase;
+            font-size: 0.675em;
+        }
+        img {
+            width: 87px;
+            height: 35px;
+        }
+    }
+}

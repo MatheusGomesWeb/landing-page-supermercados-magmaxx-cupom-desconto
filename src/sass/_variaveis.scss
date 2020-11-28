@@ -1,0 +1,28 @@
+:root {
+  // Import Google Fonts MontSerrat Sans-Serif
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700;900&display=swap');
+
+  // Font
+  --montserrat: 'Montserrat', sans-serif;
+
+  // Font Weight
+  --thin: 100;
+  --regular: 400;
+  --bold: 700;
+  --extraBold: 900;
+
+  // Cores
+  --verde: #119e49;
+  --verdeClaro: #5fa553;
+  --preto: #262626;
+  --laranja: #eb7323;
+  --branco: #fff;
+
+  // Tamanho Fontes
+  --pequeno: 14px;
+  --normal: 16px;
+  --media: 20px;
+  --extra-media: 28px;
+  --grande: 32px;
+  --extra-grande: 40px;
+}

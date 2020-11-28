@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: var(--normal);
+  font-family: var(--montserrat);
+  color: var(--preto);
+  font-weight: var(--regular);
+}
+
+h1 {
+  font-size: var(--extra-grande);
+}
+h2 {
+  font-size: var(--grande);
+}
+h3 {
+  font-size: var(--extra-media);
+}
+h4 {
+  font-size: var(--media);
+}
+h5 {
+  font-size: var(--normal);
+}
+h6 {
+  font-size: var(--pequeno);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: var(--bold);
+  color: var(--preto);
+  font-family: var(--montserrat);
+}
