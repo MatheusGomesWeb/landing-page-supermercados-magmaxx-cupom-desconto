@@ -13,35 +13,34 @@
 
 <body>
 
-    <header>
+    <header class="l-header">
         <!--titulo-header-->
-        <img src="./dist/img/logo.png" alt="Logo Magmaxx" class="logo">
-        <h3>CADASTRE-SE NO <br> CLUBE DO DESCONTO</h3>
+        <img src="./dist/img/logo.png" alt="Logo Magmaxx" class="l-header__logo">
+        <h3 class="l-header__titulo">CADASTRE-SE NO <br> CLUBE DO DESCONTO</h3>
         <a href="#">
-            <img src="./dist/img/arrow.png" alt="page down" class="page-down">
+            <img src="./dist/img/arrow.png" alt="page down" class="l-header__page-down">
         </a>
         <!--titulo-header-->
     </header>
 
-    <main>
+    <main class="l-main">
+
         <!--titulo-principal-->
-        <section class="titulo-principal">
-            <h1>NO CLUBE DE DESCONTOS</h1>
-
-            <h3 class="titulo-destacado">você tem acesso á ofertas exclusivas</h3>
-
-            <h2>CADASTRE-SE JÁ!</h2>
-            <h6>PREENCHA CORRETAMENTE TODAS AS INFORMAÇÕES</h6>
+        <section class="c-titulo">
+            <h1 class="c-titulo__grande">NO CLUBE DE DESCONTOS</h1>
+            <h3 class="is--ativo">você tem acesso á ofertas exclusivas</h3>
+            <h2 class="c-titulo__medio">CADASTRE-SE JÁ!</h2>
+            <h6 class="c-titulo__pequeno">PREENCHA CORRETAMENTE TODAS AS INFORMAÇÕES</h6>
         </section>
         <!--titulo-principal-->
 
         <!--formulário-->
-        <section class="formulario">
+        <section class="c-form">
             <form action="#">
                 <input type="text" name="nome" id="nome" placeholder="Nome" required maxlength="100">
 
                 <!--formulario-inline-->
-                <div class="formulario-inline">
+                <div class="c-form__inline">
                     <input type="text" name="dtNascimento" id="dtNascimento" placeholder="Data de Nascimento" required>
 
                     <select name="sexo" id="sexo">
@@ -70,9 +69,9 @@
                 <input type="email" name="email" id="email" placeholder="E-mail" required maxlength="100">
 
                 <!--formulario-inline-->
-                <div class="formulario-inline termos">
+                <div class="c-form__inline">
 
-                    <div class="termos-inline">
+                    <div class="c-form__inline__termos">
                         <div>
                             <input type="checkbox" name="lembrar" id="lembrar">
                         </div>
@@ -97,51 +96,51 @@
 
 
     <!--footer-->
-    <footer>
-        <!--nossas-lojas-->
-        <div class="nossas-lojas">
-            <h4>nossas lojas</h4>
+    <footer class="l-footer">
 
-            <ul>
-                <li>
+        <!--nossas-lojas-->
+        <div class="l-footer__lojas">
+
+            <h4 class="l-footer__titulo">nossas lojas</h4>
+
+            <ul class="c-list-lojas">
+                <li class="c-list-lojas__item is--ativo">
                     <span>pariquera-açu</span>
                     <span>loja 01</span>
                 </li>
-                <li>Av. Dr. Carlos Botello, 627 - Centro</li>
-                <li>Tel.: (13) 3856-1930</li>
+                <li class="c-list-lojas__item">Av. Dr. Carlos Botello, 627 - Centro</li>
+                <li class="c-list-lojas__item">Tel.: (13) 3856-1930</li>
             </ul>
 
-            <ul>
-                <li>
+            <ul class="c-list-lojas">
+                <li class="c-list-lojas__item is--ativo">
                     <span>iguape</span>
                     <span>loja 02</span>
                 </li>
-
-                <li>R. Euclydes Roque Bastos, 12 - Centro</li>
-                <li>Tel.: (13) 3841-1123</li>
+                <li class="c-list-lojas__item">R. Euclydes Roque Bastos, 12 - Centro</li>
+                <li class="c-list-lojas__item">Tel.: (13) 3841-1123</li>
             </ul>
 
-            <ul>
-                <li>
+            <ul class="c-list-lojas">
+                <li class="c-list-lojas__item is--ativo">
                     <span>pariquera-açu</span>
                     <span>loja 03</span>
                 </li>
-
-                <li>Av. Dr Carlos Botello, 260 - Centro</li>
-                <li>Tel.: (13) 3856-1032</li>
+                <li class="c-list-lojas__item">Av. Dr. Carlos Botello, 260 - Centro</li>
+                <li class="c-list-lojas__item">Tel.: (13) 3856-1032</li>
             </ul>
 
         </div>
         <!--nossas-lojas-->
 
         <!--entregas-em-domicilio-->
-        <div class="entregas-em-domicilio">
+        <div class="l-footer__entregas">
             <h4>entregas em domicílio</h4>
         </div>
         <!--entregas-em-domicilio-->
 
         <!--aceitamos-cartoes-->
-        <div class="aceitamos-cartoes">
+        <div class="l-footer__cartoes">
             <h4>Aceitamos cartôes</h4>
         </div>
         <!--aceitamos-cartoes-->
