@@ -1,3 +1,15 @@
+@function em($pixel, $context: 16) {
+  @return $pixel / $context + em;
+}
+
+// Tamanho Fontes
+$pequeno: em(14);
+$normal: em(16);
+$media: em(20);
+$extra-media: em(28);
+$grande: em(32);
+$extra-grande: em(40);
+
 :root {
   // Import Google Fonts MontSerrat Sans-Serif
   @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700;900&display=swap');
@@ -17,12 +29,4 @@
   --preto: #262626;
   --laranja: #eb7323;
   --branco: #fff;
-
-  // Tamanho Fontes
-  --pequeno: 14px;
-  --normal: 16px;
-  --media: 20px;
-  --extra-media: 28px;
-  --grande: 32px;
-  --extra-grande: 40px;
 }

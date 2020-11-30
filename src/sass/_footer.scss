@@ -1,4 +1,4 @@
-footer {
+.l-footer {
   display: flex;
   align-items: flex-start;
   justify-content: space-around;
@@ -11,7 +11,7 @@ footer {
   }
 
   // titulo
-  h4 {
+  &__titulo {
     color: var(--branco);
     text-transform: uppercase;
     font-weight: var(--regular);
@@ -20,15 +20,19 @@ footer {
   }
 
   // nossas-lojas
-  .nossas-lojas {
+  &__lojas {
     color: var(--branco);
-    ul {
+
+    // List lojas
+    .c-list-lojas {
       margin-bottom: 1rem;
-      li {
+
+      &__item {
         list-style: none;
         padding: 0.5rem 0;
         text-align: center;
-        &:nth-child(1) {
+
+        &.is--ativo {
           padding-left: 0.5rem;
           padding-right: 0.5rem;
           background: var(--verde);
@@ -36,6 +40,8 @@ footer {
           border-radius: 4px;
           text-transform: uppercase;
           text-align: initial;
+        }
+        &:nth-child(1) {
           & span:nth-child(2) {
             float: right;
           }

@@ -11,29 +11,29 @@ body {
 }
 
 body {
-  font-size: var(--normal);
+  font-size: $normal;
   font-family: var(--montserrat);
   color: var(--preto);
   font-weight: var(--regular);
 }
 
 h1 {
-  font-size: var(--extra-grande);
+  font-size: $extra-grande;
 }
 h2 {
-  font-size: var(--grande);
+  font-size: $grande;
 }
 h3 {
-  font-size: var(--extra-media);
+  font-size: $extra-media;
 }
 h4 {
-  font-size: var(--media);
+  font-size: $media;
 }
 h5 {
-  font-size: var(--normal);
+  font-size: $normal;
 }
 h6 {
-  font-size: var(--pequeno);
+  font-size: $pequeno;
 }
 
 h1,
