@@ -110,7 +110,6 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  border-left: 1px solid var(--verde);
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -130,6 +129,12 @@ body {
   align-items: center;
   padding-top: 10vh;
   text-align: center;
+}
+
+@media (min-width: 1800px) {
+  .l-header {
+    padding-top: 15vh;
+  }
 }
 
 .l-header__logo {
@@ -521,7 +526,7 @@ body {
 
 .c-form__inline input,
 .c-form__inline select {
-  width: 32.222%;
+  width: 32.777%;
 }
 
 @media (max-width: 599px) {
