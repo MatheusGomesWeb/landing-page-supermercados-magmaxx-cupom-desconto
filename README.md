@@ -41,9 +41,9 @@ ___
 - [HTML5](https://developer.mozilla.org/pt-BR/docs/Web/HTML/HTML5)
 - [CSS3](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
 - [JAVASCRIPT](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
-- [JQUERY](https://jquery.com/)
 - [SASS](https://sass-lang.com/)
 - [GULP](https://gulpjs.com/)
+- [WEBPACK(#)
 - [DESIGN RESPONSIVO - MOBILE FIRST](https://www.hostgator.com.br/blog/mobile-first-o-que-e/)
 
 ___
@@ -55,13 +55,6 @@ ___
 - Javascript minificado
 - Mobile First (Responsivo) 📱
 - Compativel com todos os browsers.
-
-___
-
-### Plugins
-
-- JQuery
-- JQuery Mask
 
 ___
 
