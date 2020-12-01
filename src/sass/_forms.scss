@@ -1,4 +1,6 @@
-.c-form {
+$componentName: '.c-form';
+
+#{$componentName} {
   display: flex;
   flex-direction: column;
   padding: 0 8.5rem;

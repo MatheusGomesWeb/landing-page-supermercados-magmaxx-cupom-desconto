@@ -1,4 +1,6 @@
-.l-footer {
+$componentName: '.l-footer';
+
+#{$componentName} {
   display: flex;
   align-items: flex-start;
   justify-content: space-around;
