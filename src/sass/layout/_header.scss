@@ -5,12 +5,15 @@ $layout: 'l-header';
   height: 100vh;
   background: url('../img/header-bg.jpg') no-repeat right top;
   background-size: cover;
-  border-left: 1px solid var(--verde);
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 10vh;
   text-align: center;
+
+  @include d(desktop-up) {
+    padding-top: 15vh;
+  }
 
   // logo
   &__logo {
