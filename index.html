@@ -14,53 +14,50 @@
 <body>
 
     <header class="l-header">
-        <!--titulo-header-->
-        <img src="./dist/img/logo.png" alt="Logo Magmaxx" class="l-header__logo">
-        <h3 class="l-header__titulo">CADASTRE-SE NO <br> CLUBE DO DESCONTO</h3>
-        <a href="#">
-            <img src="./dist/img/arrow.png" alt="page down" class="l-header__page-down">
-        </a>
-        <!--titulo-header-->
+        <div class="l-header__logo"><img src="./dist/img/logo.png" alt="Logo Magmaxx" /></div>
+        <div class="c-titulo">
+            <h2 class="u-extra-bold">CADASTRE-SE NO <br> CLUBE DO DESCONTO</h2>
+        </div>
+        <div class="l-header__page-down"><a href="#"><img src="./dist/img/arrow.png" alt="page down" /></a>
+        </div>
     </header>
 
     <main class="l-main">
 
-        <!--titulo-principal-->
-        <section class="c-titulo">
-            <h1 class="c-titulo__grande">NO CLUBE DE DESCONTOS</h1>
-            <h3 class="is--ativo">você tem acesso á ofertas exclusivas</h3>
-            <h2 class="c-titulo__medio">CADASTRE-SE JÁ!</h2>
-            <h6 class="c-titulo__pequeno">PREENCHA CORRETAMENTE TODAS AS INFORMAÇÕES</h6>
-        </section>
-        <!--titulo-principal-->
+        <div class="c-titulo">
+            <h1 class="u-extra-bold">NO CLUBE DE DESCONTOS</h1>
+            <h3 class="c-titulo__ativo u-regular">você tem acesso á ofertas exclusivas</h3>
+            <h2 class="u-extra-bold">CADASTRE-SE JÁ!</h2>
+            <h6 class="u-regular">PREENCHA CORRETAMENTE TODAS AS INFORMAÇÕES</h6>
+        </div>
 
         <!--formulário-->
         <section class="c-form">
-            <form action="#">
-                <input type="text" name="nome" id="nome" placeholder="Nome" required maxlength="100">
+            <form>
+                <input type="text" name="nome" placeholder="Nome" required maxlength="100">
 
                 <!--formulario-inline-->
                 <div class="c-form__inline">
                     <input type="text" name="dtNascimento" id="dtNascimento" placeholder="Data de Nascimento" required>
 
-                    <select name="sexo" id="sexo">
+                    <select name="sexo">
                         <option value="opcao" selected>Sexo</option>
                         <option value="masculino">Masculino</option>
                         <option value="feminino">Feminino</option>
                     </select>
 
-                    <select name="estadoCivil" id="estadoCivil">
+                    <select name="estadoCivil">
                         <option value="opcao" selected>Estado Cívil</option>
                         <option value="casado">Casado</option>
                         <option value="solteiro">Solteiro</option>
                     </select>
 
-                    <input type="text" name="rg" id="rg" placeholder="RG" required>
-                    <input type="text" name="cpf" id="cpf" placeholder="CPF" required>
-                    <input type="text" name="endereco" id="endereco" placeholder="Endereço" maxlength="100">
-                    <input type="text" name="numero" id="numero" placeholder="Número" maxlength="8">
-                    <input type="text" name="cep" id="cep" placeholder="CEP">
-                    <input type="text" name="bairro" id="bairro" placeholder="Bairro" maxlength="50">
+                    <input type="text" name="rg" placeholder="RG" required>
+                    <input type="text" name="cpf" placeholder="CPF" required>
+                    <input type="text" name="endereco" placeholder="Endereço" maxlength="100">
+                    <input type="text" name="numero" placeholder="Número" maxlength="8">
+                    <input type="text" name="cep" placeholder="CEP">
+                    <input type="text" name="bairro" placeholder="Bairro" maxlength="50">
                 </div>
                 <!--formulario-inline-->
 
@@ -71,22 +68,15 @@
                 <!--formulario-inline-->
                 <div class="c-form__inline">
 
-                    <div class="c-form__inline__termos">
-                        <div>
-                            <input type="checkbox" name="lembrar" id="lembrar">
-                        </div>
-                        <div>
-                            <label for="lembrar">
-                                Aceito os <a href="#">termos</a>
-                                e condições e desejo me associar ao Clube de Descontos
-                                <a href="#">Magmaxx</a>
-                            </label>
-                        </div>
+                    <div class="c-form__termos">
+                        <input type="checkbox" name="lembrar" id="lembrar">
+                        <label for="lembrar">
+                            Aceito os <a href="#">termos</a> e condições e desejo me associar ao Clube de Descontos <a
+                                href="#">Magmaxx</a>
+                        </label>
                     </div>
 
-                    <div>
-                        <input type="submit" value="cadastrar" id="enviar">
-                    </div>
+                    <input type="submit" value="cadastrar">
                 </div>
                 <!--formulario-inline-->
             </form>
@@ -101,33 +91,35 @@
         <!--nossas-lojas-->
         <div class="l-footer__lojas">
 
-            <h4 class="l-footer__titulo">nossas lojas</h4>
+            <div class="c-titulo">
+                <h4 class="u-regular u-text-white u-text-uppercase">nossas lojas</h4>
+            </div>
 
-            <ul class="c-list-lojas">
-                <li class="c-list-lojas__item is--ativo">
+            <ul class="l-footer__list">
+                <li class="l-footer__list__item l-footer__list__item--verde">
                     <span>pariquera-açu</span>
                     <span>loja 01</span>
                 </li>
-                <li class="c-list-lojas__item">Av. Dr. Carlos Botello, 627 - Centro</li>
-                <li class="c-list-lojas__item">Tel.: (13) 3856-1930</li>
+                <li class="l-footer__list__item">Av. Dr. Carlos Botello, 627 - Centro</li>
+                <li class="l-footer__list__item">Tel.: (13) 3856-1930</li>
             </ul>
 
-            <ul class="c-list-lojas">
-                <li class="c-list-lojas__item is--ativo">
+            <ul class="l-footer__list">
+                <li class="l-footer__list__item l-footer__list__item--verde">
                     <span>iguape</span>
                     <span>loja 02</span>
                 </li>
-                <li class="c-list-lojas__item">R. Euclydes Roque Bastos, 12 - Centro</li>
-                <li class="c-list-lojas__item">Tel.: (13) 3841-1123</li>
+                <li class="l-footer__list__item">R. Euclydes Roque Bastos, 12 - Centro</li>
+                <li class="l-footer__list__item">Tel.: (13) 3841-1123</li>
             </ul>
 
-            <ul class="c-list-lojas">
-                <li class="c-list-lojas__item is--ativo">
+            <ul class="l-footer__list">
+                <li class="l-footer__list__item l-footer__list__item--verde">
                     <span>pariquera-açu</span>
                     <span>loja 03</span>
                 </li>
-                <li class="c-list-lojas__item">Av. Dr. Carlos Botello, 260 - Centro</li>
-                <li class="c-list-lojas__item">Tel.: (13) 3856-1032</li>
+                <li class="l-footer__list__item">Av. Dr. Carlos Botello, 260 - Centro</li>
+                <li class="l-footer__list__item">Tel.: (13) 3856-1032</li>
             </ul>
 
         </div>
@@ -135,13 +127,37 @@
 
         <!--entregas-em-domicilio-->
         <div class="l-footer__entregas">
-            <h4>entregas em domicílio</h4>
+
+            <div class="c-titulo">
+                <h4 class="u-regular u-text-white u-text-uppercase">Entregas em Domicílio</h4>
+            </div>
+
+            <div class="l-footer__entregas__text">
+                <p class="u-text-white">verifique <br> disponibilidade <br> e condições <br> em cada loja</p>
+                <img src="./dist/img/carrinho.png" alt="Entregas" class="l-footer__entregas__img-caminhao" />
+            </div>
+
+            <div class="l-footer__entregas__social-list">
+                <ul>
+                    <li><img src="./dist/img/ico-facebook.png" alt="facebook"> supermercadomagmax</li>
+                    <li><img src="./dist/img/ico-instagram.png" alt="instagram"> supermercadomagmax</li>
+                    <li><img src="./dist/img/ico-site.png" alt="website"> http://magmaxx.com.br</li>
+                </ul>
+            </div>
+
         </div>
         <!--entregas-em-domicilio-->
 
         <!--aceitamos-cartoes-->
         <div class="l-footer__cartoes">
-            <h4>Aceitamos cartôes</h4>
+
+            <div class="c-titulo">
+                <h4 class="u-regular u-text-white u-text-uppercase">Aceitamos cartôes</h4>
+            </div>
+
+            <div class="l-footer__cartoes__img">
+                <img src="./dist/img/pagamentos.png" alt="Cartôes">
+            </div>
         </div>
         <!--aceitamos-cartoes-->
     </footer>
