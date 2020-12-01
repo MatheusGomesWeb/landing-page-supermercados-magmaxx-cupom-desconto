@@ -1,0 +1,63 @@
+$componentName: 'c-titulo';
+
+.#{$componentName} {
+  text-align: center;
+  color: var(--preto);
+  font-family: var(--montserrat);
+
+  h1 {
+    font-size: $extra-grande;
+    line-height: calc($grande * 1.5);
+
+    @include d(mobile) {
+      font-size: $grande;
+    }
+  }
+
+  h2 {
+    font-size: $grande;
+    margin: 1rem 0;
+    line-height: calc($extra-media * 1.5);
+
+    @include d(mobile) {
+      font-size: $extra-media;
+    }
+  }
+
+  h3 {
+    font-size: $extra-media;
+  }
+  h4 {
+    font-size: $media;
+  }
+  h5 {
+    font-size: $normal;
+  }
+  h6 {
+    font-size: $normal;
+    margin-bottom: 1rem;
+    line-height: calc($normal * 1.5);
+
+    @include d(mobile) {
+      font-size: $pequeno;
+      line-height: calc($pequeno * 1.5);
+    }
+  }
+
+  &__ativo {
+    background: var(--laranja);
+    color: var(--branco);
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 0.5rem;
+    border-radius: 4px;
+    margin-top: 1rem;
+    line-height: calc($media * 1.5);
+
+    @include d(mobile) {
+      font-size: $media !important;
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
+  }
+}

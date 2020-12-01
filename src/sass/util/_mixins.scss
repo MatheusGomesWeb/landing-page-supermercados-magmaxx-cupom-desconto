@@ -1,0 +1,3 @@
+@function rem($pixel, $context: 16) {
+  @return $pixel / $context + rem;
+}

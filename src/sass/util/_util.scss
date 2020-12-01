@@ -1,0 +1,19 @@
+// Font weight
+.u-bold {
+  font-weight: var(--bold);
+}
+.u-extra-bold {
+  font-weight: var(--extraBold);
+}
+.u-regular {
+  font-weight: var(--regular);
+}
+
+// texto
+.u-text-white {
+  color: var(--branco);
+}
+
+.u-text-uppercase {
+  text-transform: uppercase;
+}

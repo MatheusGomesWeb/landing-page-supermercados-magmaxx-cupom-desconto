@@ -1,0 +1,150 @@
+$layout: 'l-footer';
+
+.#{$layout} {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-around;
+  background: var(--laranja);
+  padding: 2.5rem 0;
+
+  @include d(mobile) {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  // nossas-lojas
+  &__lojas {
+    color: var(--branco);
+  }
+
+  &__list {
+    margin-bottom: 1rem;
+
+    &:nth-child(2) {
+      margin-top: 1.5rem;
+    }
+
+    &__item {
+      list-style: none;
+      padding: 0.5rem 0;
+      text-align: center;
+
+      &--verde {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        background: var(--verde);
+        margin-bottom: 0.5rem;
+        border-radius: 4px;
+        text-transform: uppercase;
+        text-align: initial;
+      }
+    }
+
+    @include d(mobile) {
+      margin-left: 1.5rem;
+      margin-right: 1.5rem;
+    }
+  }
+
+  &__entregas {
+    position: relative;
+    &::before {
+      content: '';
+      display: block;
+      width: 1px;
+      height: 80%;
+      background: var(--verdeClaro);
+      position: absolute;
+      top: 10%;
+      bottom: 10%;
+      left: -3rem;
+
+      @include d(mobile) {
+        top: -1.5rem;
+        width: 80%;
+        height: 1px;
+        left: 10%;
+      }
+    }
+
+    &::after {
+      content: '';
+      display: block;
+      width: 1px;
+      height: 80%;
+      background: var(--verdeClaro);
+      position: absolute;
+      top: 10%;
+      bottom: 10%;
+      right: -3rem;
+
+      @include d(mobile) {
+        width: 80%;
+        height: 1px;
+        left: 10%;
+        top: 100%;
+      }
+    }
+
+    @include d(mobile) {
+      margin-top: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    &__text {
+      display: flex;
+      flex-direction: column;
+      margin: 1rem auto;
+
+      & > p {
+        width: 50%;
+        line-height: calc($normal * 1.5);
+      }
+    }
+
+    &__social-list {
+      li {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        color: var(--branco);
+        margin-bottom: 1rem;
+        img {
+          margin-right: 0.5rem;
+          width: 32px;
+          height: 32px;
+
+          @include d(mobile) {
+            width: 22px;
+            height: 22px;
+          }
+        }
+      }
+    }
+
+    &__img-caminhao {
+      width: 187px;
+      height: 93px;
+      margin-top: 0.5rem;
+      align-self: flex-end;
+    }
+  }
+
+  &__cartoes {
+    &__img {
+      margin-top: 1.5rem;
+
+      @include d(mobile) {
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+      }
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

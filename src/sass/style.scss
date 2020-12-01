@@ -1,6 +1,16 @@
-@import './variaveis';
-@import './reset';
-@import './forms';
-@import './header';
-@import './main';
-@import './footer';
+// Utils
+@import './util/mixins';
+@import './util/variaveis';
+@import './util/animations';
+@import './util/reset';
+@import './util/breakpoint';
+@import './util/util';
+
+// Layouts
+@import './layout/header';
+@import './layout/main';
+@import './layout/footer';
+
+// Components
+@import './component/form';
+@import './component/titulo';

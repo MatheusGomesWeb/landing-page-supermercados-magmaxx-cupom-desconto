@@ -1,0 +1,8 @@
+$layout: 'l-main';
+
+.#{$layout} {
+  display: flex;
+  flex-direction: column;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+}
