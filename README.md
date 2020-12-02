@@ -12,7 +12,7 @@
   Landing Page para Cadastro de Cupom de Desconto dos <strong>Supermercados Magmaxx</strong> 
 </p>
 
-<p align="center"><b>Concluído</b> :heavy_check_mark:</p>
+<p align="center"><b>Em Desenvolvimento</b> :heavy_check_mark:</p>
   
 <p align="center">
  <a href="#computer-sobre">Sobre</a> •
