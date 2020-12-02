@@ -1,6 +1,5 @@
-  
 <p align="center">  
-<img src="https://i.imgur.com/cTkJhHw.png" alt="Landing Page dos Supermercados Magmaxx para Cadastrar Cupom de Desconto"/>
+<img src="./readme/preview.png" alt="Landing Page dos Supermercados Magmaxx para Cadastrar Cupom de Desconto"/>
 </p>
 
 <h1 align="center">
@@ -14,10 +13,6 @@
 </p>
 
 <p align="center"><b>Concluído</b> :heavy_check_mark:</p>
-
-<p align="center">
-  <a href="https://matheusgomesweb.github.io/landing-page-supermercados-magmaxx-cupom-desconto" target="_blank"/><img src="https://img.shields.io/badge/🌐%20LIVE%20PREVIEW-51487f?style=flat-square"/></a>
-</p>
   
 <p align="center">
  <a href="#computer-sobre">Sobre</a> •
@@ -34,19 +29,19 @@
 
 Landing Page para Cadastro de Cupom de Desconto dos **Supermercados Magmaxx**
 
-___
+---
 
 ### :hammer: Tecnologias
 
 - [HTML5](https://developer.mozilla.org/pt-BR/docs/Web/HTML/HTML5)
 - [CSS3](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
 - [JAVASCRIPT](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
-- [JQUERY](https://jquery.com/)
+- [WEBPACK]()
 - [SASS](https://sass-lang.com/)
 - [GULP](https://gulpjs.com/)
 - [DESIGN RESPONSIVO - MOBILE FIRST](https://www.hostgator.com.br/blog/mobile-first-o-que-e/)
 
-___
+---
 
 ### :wrench: Otimizações
 
@@ -56,15 +51,6 @@ ___
 - Mobile First (Responsivo) 📱
 - Compativel com todos os browsers.
 
-___
-
-### Plugins
-
-- JQuery
-- JQuery Mask
-
-___
-
 ### :rocket: Performance
 
 [<img src="https://www.gstatic.com/images/icons/material/product/2x/pagespeed_64dp.png" width="46px"/>](https://developers.google.com/speed/pagespeed/insights/?hl=pt-br&url=https%3A%2F%2Fmatheusgomesweb.github.io%2Flanding-page-supermercados-magmaxx-cupom-desconto%2F&tab=desktop)
@@ -72,13 +58,13 @@ ___
 - **Desktop** - 92%
 - **Mobile** - 75%
 
-___
+---
 
 ### W3C
 
 [<img style="border:0;width:46px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss-blue" alt="CSS válido!" />](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fmatheusgomesweb.github.io%2Flanding-page-supermercados-magmaxx-cupom-desconto%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=pt-BR)
 
-___
+---
 
 ### Autor
 
@@ -99,7 +85,7 @@ Feito com ❤️ por Matheus Gomes 👋🏽 Entre em contato!
 <img src="https://img.shields.io/badge/-MatheusGomes-%234267b2?style=flat-square&logo=facebook&logoColor=white&link=https://www.facebook.com/matheusgomesrdj/"/>
 </a>
 
-___
+---
 
 ### :memo: Licença
 
