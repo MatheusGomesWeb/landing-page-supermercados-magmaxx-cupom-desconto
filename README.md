@@ -39,7 +39,6 @@ Landing Page para Cadastro de Cupom de Desconto dos **Supermercados Magmaxx**
 - [WEBPACK]()
 - [SASS](https://sass-lang.com/)
 - [GULP](https://gulpjs.com/)
-- [WEBPACK](#)
 - [DESIGN RESPONSIVO - MOBILE FIRST](https://www.hostgator.com.br/blog/mobile-first-o-que-e/)
 
 ---
