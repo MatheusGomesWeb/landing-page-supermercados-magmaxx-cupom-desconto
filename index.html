@@ -18,7 +18,8 @@
         <div class="c-titulo">
             <h2 class="u-extra-bold">CADASTRE-SE NO <br> CLUBE DO DESCONTO</h2>
         </div>
-        <div class="l-header__page-down"><a href="#"><img src="./dist/img/arrow.png" alt="page down" /></a>
+        <div class="l-header__page-down" data-js-scrollToForm>
+            <img src="./dist/img/arrow.png" alt="page down" />
         </div>
     </header>
 
@@ -33,12 +34,12 @@
 
         <!--formulário-->
         <section class="c-form">
-            <form>
-                <input type="text" name="nome" placeholder="Nome" required maxlength="100">
+            <form name="formulario">
+                <input type="text" name="nome" placeholder="Nome" maxlength="100">
 
                 <!--formulario-inline-->
                 <div class="c-form__inline">
-                    <input type="text" name="dtNascimento" id="dtNascimento" placeholder="Data de Nascimento" required>
+                    <input type="text" name="dtNascimento" id="dtNascimento" placeholder="Data de Nascimento">
 
                     <select name="sexo">
                         <option value="opcao" selected>Sexo</option>
@@ -52,8 +53,8 @@
                         <option value="solteiro">Solteiro</option>
                     </select>
 
-                    <input type="text" name="rg" placeholder="RG" required>
-                    <input type="text" name="cpf" placeholder="CPF" required>
+                    <input type="text" name="rg" placeholder="RG">
+                    <input type="text" name="cpf" placeholder="CPF">
                     <input type="text" name="endereco" placeholder="Endereço" maxlength="100">
                     <input type="text" name="numero" placeholder="Número" maxlength="8">
                     <input type="text" name="cep" placeholder="CEP">
@@ -63,7 +64,7 @@
 
                 <input type="text" name="telefone" id="telefone" placeholder="Telefone">
                 <input type="tel" name="celular" id="celular" placeholder="Celular">
-                <input type="email" name="email" id="email" placeholder="E-mail" required maxlength="100">
+                <input type="email" name="email" id="email" placeholder="E-mail" maxlength="100">
 
                 <!--formulario-inline-->
                 <div class="c-form__inline">
@@ -76,7 +77,7 @@
                         </label>
                     </div>
 
-                    <input type="submit" value="cadastrar">
+                    <input type="submit" value="cadastrar" id="btn-submit">
                 </div>
                 <!--formulario-inline-->
             </form>
@@ -162,6 +163,56 @@
         <!--aceitamos-cartoes-->
     </footer>
     <!--footer-->
+
+    <!--Javascript ELEMENTS-->
+
+    <!--btn-top-->
+    <div class="c-btn-top">
+        <img src="./dist/img/arrow.png" alt="page down" />
+    </div>
+    <!--btn-top-->
+
+    <!--Modal-->
+    <div class="c-modal" data-active-modal="false">
+        <div class="c-modal__container">
+            <div class="c-modal__close">X</div>
+            <div class="c-modal__title">
+                <span class="c-modal__title__type"></span>:
+                <span class="c-modal__title__message"></span>
+            </div>
+            <div class="c-modal__mensagem">
+                <ul class="c-modal__list"></ul>
+            </div>
+
+            <!--<div class="c-modal__title c-modal__title--sucesso">
+                <span class="c-modal__title__type">SUCESSO</span>:
+                <span class="c-modal__title__message">Mensagem enviada com sucesso</span>
+            </div>
+            <div class="c-modal__mensagem">
+                <ul class="c-modal__list">
+                    <li class="c-modal__list__item c-modal__item--sucesso">
+                        Exemplo de mensagem de sucesso
+                    </li>
+                </ul>
+            </div>
+            -->
+            <!--<div class="c-modal__title c-modal__title--erro">
+                <span class="c-modal__title__type">ERRO</span>:
+                <span class="c-modal__title__message">Corrija os dados</span>
+            </div>
+            <div class="c-modal__mensagem">
+                <ul class="c-modal__list">
+                    <li class="c-modal__list__item">
+                        Exemplo de mensagem de erro
+                    </li>
+                </ul>
+            </div> -->
+
+        </div>
+    </div>
+    <!--Modal-->
+
+    <!--Javascript ELEMENTS-->
 
     <!--javascripts-->
     <script src="./dist/js/bundle.js"></script>
