@@ -11,6 +11,7 @@
   --preto: #262626;
   --laranja: #eb7323;
   --branco: #fff;
+  --erro: #ff3333;
 }
 
 @-webkit-keyframes arrow {
@@ -129,6 +130,7 @@ body {
   align-items: center;
   padding-top: 10vh;
   text-align: center;
+  overflow: hidden;
 }
 
 @media (min-width: 1800px) {
@@ -157,6 +159,7 @@ body {
   width: 97px;
   height: 98px;
   animation: arrow 0.8s alternate-reverse infinite;
+  cursor: pointer;
 }
 
 @media (max-width: 599px) {
@@ -427,7 +430,7 @@ body {
   -moz-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  padding: 0 8.5rem;
+  margin: 0 auto;
 }
 
 @media (max-width: 599px) {
@@ -444,18 +447,21 @@ body {
 
 @media (min-width: 900px) {
   .c-form {
+    max-width: 900px;
     padding: 0 5.5rem;
   }
 }
 
 @media (min-width: 1200px) {
   .c-form {
+    max-width: 1200px;
     padding: 0 7.5rem;
   }
 }
 
 @media (min-width: 1800px) {
   .c-form {
+    max-width: 1800px;
     padding: 0 9.5rem;
   }
 }
@@ -464,9 +470,9 @@ body {
 .c-form select {
   width: 100%;
   height: 53px;
-  padding: 1rem;
   outline: 0;
   margin: 0.5rem 0;
+  text-indent: 1rem;
 }
 
 .c-form input::-webkit-input-placeholder, .c-form select::-webkit-input-placeholder {
@@ -501,6 +507,10 @@ body {
   -o-transition: 0.3s;
   -moz-transition: 0.3s;
   transition: 0.3s;
+}
+
+.c-form select {
+  text-indent: 0.2rem;
 }
 
 .c-form__inline {
@@ -546,10 +556,12 @@ body {
 }
 
 .c-form__inline input[type='submit'] {
-  width: auto;
+  width: 140px;
+  text-align: center;
   background: var(--laranja);
   color: var(--branco);
   border: none;
+  text-indent: 0;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
@@ -601,10 +613,11 @@ body {
 }
 
 .c-form__termos input[type='checkbox'] {
-  width: 25px;
-  height: 25px;
+  width: 14px;
+  height: 14px;
   margin-right: 1rem;
   cursor: pointer;
+  padding: 0.5rem;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -612,9 +625,6 @@ body {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
-}
-
-.c-form__termos input[type='checkbox']:checked {
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -625,11 +635,9 @@ body {
   -moz-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -moz-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -637,6 +645,9 @@ body {
   -moz-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+}
+
+.c-form__termos input[type='checkbox']:checked {
   border: 2px solid var(--verdeClaro);
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
@@ -646,8 +657,13 @@ body {
 
 .c-form__termos input[type='checkbox']:checked::before {
   content: '✔';
-  font-size: 1.25rem;
+  font-size: 0.875rem;
   color: var(--laranja);
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+  margin-right: 0.9rem;
 }
 
 .c-titulo {
@@ -733,4 +749,242 @@ body {
     margin-left: 1rem;
     margin-right: 1rem;
   }
+}
+
+.c-btn-top {
+  position: fixed;
+  right: 2vw;
+  bottom: 5vh;
+  display: none;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 0.5rem;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  text-align: center;
+  animation: arrow 0.8s alternate-reverse infinite;
+  cursor: pointer;
+}
+
+.c-btn-top img {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+  width: 77px;
+  height: 68px;
+}
+
+.c-btn-top img:hover {
+  opacity: 0.9;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  -moz-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.c-modal {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  opacity: 0;
+  -webkit-transition: opacity 0.5s;
+  -o-transition: opacity 0.5s;
+  -moz-transition: opacity 0.5s;
+  transition: opacity 0.5s;
+}
+
+.c-modal[data-active-modal='true'] {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  opacity: 1;
+}
+
+.c-modal__container {
+  width: 45%;
+  max-height: 80vh;
+  background-color: var(--branco);
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  border: 8px solid var(--laranja);
+  color: var(--branco);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -moz-box-orient: vertical;
+  -moz-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.c-modal__close {
+  width: 32px;
+  height: 32px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-self: flex-end;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 1.125rem;
+  position: absolute;
+  top: -24px;
+  right: -16px;
+  background-color: var(--branco);
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+  color: red;
+  border: 4px solid var(--laranja);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.c-modal__close:hover {
+  background-color: var(--laranja);
+  color: white;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  -moz-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.c-modal__title {
+  color: var(--preto);
+  text-align: left;
+  font-size: 1.375rem;
+  text-transform: uppercase;
+  border-bottom: 2px solid var(--laranja);
+  padding: 1rem 2rem;
+}
+
+.c-modal__title__type {
+  font-weight: bold;
+}
+
+.c-modal__title__message {
+  font-weight: var(--regular);
+}
+
+.c-modal__mensagem {
+  color: var(--preto);
+  font-size: 1.125rem;
+  padding: 1.5rem 2rem;
+  max-height: 35vh;
+  overflow-y: scroll;
+}
+
+.c-modal__list {
+  padding: 0 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.c-modal__list__item {
+  list-style: none;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -moz-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  font-weight: var(--regular);
+  text-transform: uppercase;
+}
+
+.c-modal__list__item:not(:nth-child(1)) {
+  margin-top: 0.2rem;
+}
+
+.c-modal__list__item::before {
+  content: '\2022';
+  color: var(--laranja);
+  font-weight: bold;
+  font-size: 2rem;
+  position: relative;
+  top: -0.12rem;
+  left: -0.5rem;
+}
+
+.c-modal__title--sucesso {
+  color: white;
+  font-weight: bold;
+  background-color: var(--verdeClaro);
+  border-bottom: 2px solid var(--preto);
+}
+
+.c-modal__title--erro {
+  color: var(--branco);
+  font-weight: bold;
+  background-color: red;
+  border-bottom: 2px solid var(--erro);
+}
+
+.c-modal__item--sucesso {
+  font-size: 1.375rem;
+  color: var(--verde);
+  font-weight: var(--regular);
+  margin-bottom: -1.5rem;
+}
+
+.c-modal__item--sucesso::before {
+  display: none;
 }

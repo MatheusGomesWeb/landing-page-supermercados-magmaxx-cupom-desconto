@@ -10,6 +10,7 @@ $layout: 'l-header';
   align-items: center;
   padding-top: 10vh;
   text-align: center;
+  overflow: hidden;
 
   @include d(desktop-up) {
     padding-top: 15vh;
@@ -34,7 +35,7 @@ $layout: 'l-header';
     width: 97px;
     height: 98px;
     animation: arrow 0.8s alternate-reverse infinite;
-
+    cursor: pointer;
     @include d(mobile) {
       width: 77px;
       height: 78px;

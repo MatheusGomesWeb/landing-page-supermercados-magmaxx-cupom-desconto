@@ -3,7 +3,7 @@ $componentName: 'c-form';
 .#{$componentName} {
   display: flex;
   flex-direction: column;
-  padding: 0 8.5rem;
+  margin: 0 auto;
 
   @include d(mobile) {
     padding: 0 1.5rem;
@@ -14,14 +14,17 @@ $componentName: 'c-form';
   }
 
   @include d(tablet-up) {
+    max-width: 900px;
     padding: 0 5.5rem;
   }
 
   @include d(desktop) {
+    max-width: 1200px;
     padding: 0 7.5rem;
   }
 
   @include d(desktop-up) {
+    max-width: 1800px;
     padding: 0 9.5rem;
   }
 
@@ -29,9 +32,9 @@ $componentName: 'c-form';
   select {
     width: 100%;
     height: 53px;
-    padding: 1rem;
     outline: 0;
     margin: 0.5rem 0;
+    text-indent: 1rem;
 
     &::placeholder {
       font-weight: var(--regular);
@@ -41,6 +44,10 @@ $componentName: 'c-form';
       border: 1px solid var(--laranja);
       transition: 0.3s;
     }
+  }
+
+  select {
+    text-indent: 0.2rem;
   }
 
   // formulario-inline
@@ -66,10 +73,12 @@ $componentName: 'c-form';
 
     // submit
     input[type='submit'] {
-      width: auto;
+      width: 140px;
+      text-align: center;
       background: var(--laranja);
       color: var(--branco);
       border: none;
+      text-indent: 0;
       border-radius: 4px;
       text-transform: uppercase;
       font-weight: var(--bold);
@@ -106,26 +115,29 @@ $componentName: 'c-form';
 
     // checkbox
     input[type='checkbox'] {
-      width: 25px;
-      height: 25px;
+      width: 14px;
+      height: 14px;
       margin-right: 1rem;
       cursor: pointer;
+      padding: 0.5rem;
       appearance: none;
       border: 2px solid var(--laranja);
       border-radius: 4px;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      flex-direction: column;
 
       &:checked {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
         border: 2px solid var(--verdeClaro);
         transition: 0.3s;
 
         &::before {
           content: '✔';
-          font-size: $media;
+          font-size: $pequeno;
           color: var(--laranja);
+          align-self: center;
+          margin-right: 0.9rem;
         }
       }
     }

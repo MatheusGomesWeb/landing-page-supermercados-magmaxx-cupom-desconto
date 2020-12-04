@@ -1,0 +1,26 @@
+$componentName: 'c-btn-top';
+
+.#{$componentName} {
+  position: fixed;
+  right: 2vw;
+  bottom: 5vh;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  border-radius: 8px;
+  text-align: center;
+  animation: arrow 0.8s alternate-reverse infinite;
+  cursor: pointer;
+
+  img {
+    transform: rotate(180deg);
+    width: 77px;
+    height: 68px;
+
+    &:hover {
+      opacity: 0.9;
+      transition: 0.3s;
+    }
+  }
+}
