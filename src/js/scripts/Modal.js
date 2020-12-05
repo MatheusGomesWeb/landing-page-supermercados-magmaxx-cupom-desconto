@@ -5,6 +5,7 @@ export default class Modal {
     this.closeBtn = document.querySelector(closeBtn);
 
     this.closeModal = this.closeModal.bind(this);
+    this.outsideCloseModal = this.outsideCloseModal.bind(this);
   }
 
   // Mensagem dentro do Modal
@@ -35,9 +36,20 @@ export default class Modal {
 
     if (type === 0) {
       insertMessage('c-modal__title--erro', '');
+      document
+        .querySelector('.c-modal__title')
+        .classList.remove('c-modal__title--sucesso');
     } else if (type === 1) {
       insertMessage('c-modal__title--sucesso', 'c-modal__item--sucesso');
+      document
+        .querySelector('.c-modal__title')
+        .classList.remove('c-modal__title--erro');
     }
+  }
+
+  // Limpa mensagem do modal
+  clearModalMessage(elMessage) {
+    this.modal.querySelector(elMessage).innerHTML = '';
   }
 
   // Abre o modal
@@ -49,16 +61,17 @@ export default class Modal {
 
   // Fecha o Modal
   closeModal() {
-    if (this.container.dataset.activeModal === 'true') {
-      this.container.dataset.activeModal = 'false';
+    if (this.container.dataset.activeModal) {
+      this.container.dataset.activeModal = false;
+      this.container.removeEventListener('click', this.outsideCloseModal);
+      this.clearModalMessage('.c-modal__list');
     }
   }
 
   // Fecha modal ao clicar fora
   outsideCloseModal({ target }) {
-    if (!target.dataset.activeModal) {
-      this.container.dataset.activeModal = false;
-      this.container.removeEventListener('click', this.outsideCloseModal);
+    if (target.dataset.activeModal) {
+      this.closeModal();
     }
   }
 

@@ -26,6 +26,9 @@ export default class Form {
 
     // Sucesso
     if (nome && sexo) {
+      // Inicia o Modal (Abre o modal e adiciona evento de fechar modal)
+      modal.start();
+
       // Mensagem do Modal
       modal.messageModal({
         type: 1,
@@ -33,10 +36,10 @@ export default class Form {
         typeMessage: 'mensagem enviada com sucesso',
         message: ['Mensagem enviada com sucesso !'],
       });
-
+    } else {
       // Inicia o Modal (Abre o modal e adiciona evento de fechar modal)
       modal.start();
-    } else {
+
       // Mensagem do Modal
       modal.messageModal({
         type: 0,
@@ -44,8 +47,6 @@ export default class Form {
         typeMessage: 'verifique os dados',
         message: ['Preencha o campo nome', 'Selecione o campo sexo'],
       });
-      // Inicia o Modal (Abre o modal e adiciona evento de fechar modal)
-      modal.start();
     }
   }
 

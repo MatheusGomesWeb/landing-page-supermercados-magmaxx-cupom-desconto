@@ -855,6 +855,30 @@ body {
   justify-content: space-between;
 }
 
+@media (max-width: 599px) {
+  .c-modal__container {
+    width: 80%;
+  }
+}
+
+@media (min-width: 600px) {
+  .c-modal__container {
+    width: 80%;
+  }
+}
+
+@media (min-width: 900px) {
+  .c-modal__container {
+    width: 60%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .c-modal__container {
+    width: 45%;
+  }
+}
+
 .c-modal__close {
   width: 32px;
   height: 32px;
@@ -908,6 +932,12 @@ body {
   padding: 1rem 2rem;
 }
 
+@media (max-width: 599px) {
+  .c-modal__title {
+    font-size: 1.125rem;
+  }
+}
+
 .c-modal__title__type {
   font-weight: bold;
 }
@@ -922,6 +952,13 @@ body {
   padding: 1.5rem 2rem;
   max-height: 35vh;
   overflow-y: scroll;
+}
+
+@media (max-width: 599px) {
+  .c-modal__mensagem {
+    padding: 1rem;
+    font-size: 1rem;
+  }
 }
 
 .c-modal__list {

@@ -31,6 +31,22 @@ $componentName: 'c-modal';
     flex-direction: column;
     position: relative;
     justify-content: space-between;
+
+    @include d(mobile) {
+      width: 80%;
+    }
+
+    @include d(tablet) {
+      width: 80%;
+    }
+
+    @include d(tablet-up) {
+      width: 60%;
+    }
+
+    @include d(desktop) {
+      width: 45%;
+    }
   }
 
   // Botao de Fechar Modal
@@ -67,6 +83,10 @@ $componentName: 'c-modal';
     border-bottom: 2px solid var(--laranja);
     padding: 1rem 2rem;
 
+    @include d(mobile) {
+      font-size: rem(18);
+    }
+
     &__type {
       font-weight: bold;
     }
@@ -83,6 +103,11 @@ $componentName: 'c-modal';
     padding: 1.5rem 2rem;
     max-height: 35vh;
     overflow-y: scroll;
+
+    @include d(mobile) {
+      padding: 1rem;
+      font-size: rem(16);
+    }
   }
 
   // List
