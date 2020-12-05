@@ -113,7 +113,6 @@ $componentName: 'c-modal';
   // List
   &__list {
     padding: 0 1rem;
-    margin-bottom: 1.5rem;
 
     // List Itens - Por padrão é de ERRO
     &__item {
@@ -155,12 +154,40 @@ $componentName: 'c-modal';
     background-color: red;
     border-bottom: 2px solid var(--erro);
   }
+
+  // Titulo de Loading
+  &__title--loading {
+    color: white;
+    font-weight: bold;
+    background-color: var(--laranja);
+    border-bottom: 2px solid var(--verdeClaro);
+  }
+
   // Mensagem de sucesso
   &__item--sucesso {
     font-size: rem(22);
     color: var(--verde);
     font-weight: var(--regular);
-    margin-bottom: -1.5rem;
+    margin-bottom: -0.2rem;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  // Loading - Bolinha
+  &__item--loading {
+    width: 72px;
+    height: 72px;
+    background-color: var(--branco);
+    border: 4px solid var(--laranja);
+    border-radius: 50%;
+    padding: 1rem;
+    margin-bottom: -0.2rem;
+    margin: 0 auto;
+    border-top-color: var(--branco);
+    animation: loading 0.8s infinite linear;
+    font-size: 0;
 
     &::before {
       display: none;
