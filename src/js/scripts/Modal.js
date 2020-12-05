@@ -4,6 +4,7 @@ export default class Modal {
     this.modal = document.querySelector(modal);
     this.closeBtn = document.querySelector(closeBtn);
 
+    // bind
     this.closeModal = this.closeModal.bind(this);
     this.outsideCloseModal = this.outsideCloseModal.bind(this);
   }
@@ -22,28 +23,51 @@ export default class Modal {
 
       // Mensagem Modal
       message.forEach((msg) => {
-        document.querySelector('.c-modal__list').innerHTML += `
+        if (msg) {
+          document.querySelector('.c-modal__list').innerHTML += `
           <li class="c-modal__list__item ${classItem}">${msg}</li>    
         `;
+        }
       });
     }
 
     /* 
-    Tipos de erros
+    Tipos
      * 0: erro
      * 1: sucesso
+     * 2: loading
      */
 
     if (type === 0) {
       insertMessage('c-modal__title--erro', '');
+
+      // Removendo classes para mudar a cor do titulo
       document
         .querySelector('.c-modal__title')
         .classList.remove('c-modal__title--sucesso');
+      document
+        .querySelector('.c-modal__title')
+        .classList.remove('c-modal__title--loading');
     } else if (type === 1) {
       insertMessage('c-modal__title--sucesso', 'c-modal__item--sucesso');
+
+      // Removendo classes para mudar a cor do titulo
       document
         .querySelector('.c-modal__title')
         .classList.remove('c-modal__title--erro');
+      document
+        .querySelector('.c-modal__title')
+        .classList.remove('c-modal__title--loading');
+    } else if (type === 2) {
+      insertMessage('c-modal__title--loading', 'c-modal__item--loading');
+
+      // Removendo classes para mudar a cor do titulo
+      document
+        .querySelector('.c-modal__title')
+        .classList.remove('c-modal__title--erro');
+      document
+        .querySelector('.c-modal__title')
+        .classList.remove('c-modal__title--sucesso');
     }
   }
 
