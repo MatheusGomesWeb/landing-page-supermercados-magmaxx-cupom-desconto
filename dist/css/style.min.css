@@ -62,6 +62,54 @@
   }
 }
 
+@-webkit-keyframes loading {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@-moz-keyframes loading {
+  from {
+    -moz-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -moz-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@-o-keyframes loading {
+  from {
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes loading {
+  from {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -473,6 +521,10 @@ body {
   outline: 0;
   margin: 0.5rem 0;
   text-indent: 1rem;
+  border: 1px solid #cfcfcf;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
 }
 
 .c-form input::-webkit-input-placeholder, .c-form select::-webkit-input-placeholder {
@@ -963,7 +1015,6 @@ body {
 
 .c-modal__list {
   padding: 0 1rem;
-  margin-bottom: 1.5rem;
 }
 
 .c-modal__list__item {
@@ -1015,13 +1066,43 @@ body {
   border-bottom: 2px solid var(--erro);
 }
 
+.c-modal__title--loading {
+  color: white;
+  font-weight: bold;
+  background-color: var(--laranja);
+  border-bottom: 2px solid var(--verdeClaro);
+}
+
 .c-modal__item--sucesso {
   font-size: 1.375rem;
   color: var(--verde);
   font-weight: var(--regular);
-  margin-bottom: -1.5rem;
+  margin-bottom: -0.2rem;
 }
 
 .c-modal__item--sucesso::before {
+  display: none;
+}
+
+.c-modal__item--loading {
+  width: 72px;
+  height: 72px;
+  background-color: var(--branco);
+  border: 4px solid var(--laranja);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  padding: 1rem;
+  margin-bottom: -0.2rem;
+  margin: 0 auto;
+  border-top-color: var(--branco);
+  -webkit-animation: loading 0.8s infinite linear;
+  -moz-animation: loading 0.8s infinite linear;
+  -o-animation: loading 0.8s infinite linear;
+  animation: loading 0.8s infinite linear;
+  font-size: 0;
+}
+
+.c-modal__item--loading::before {
   display: none;
 }
