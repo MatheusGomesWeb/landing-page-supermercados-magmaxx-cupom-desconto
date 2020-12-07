@@ -37,7 +37,7 @@ export default class Mask {
       diaNascimento + '/' + mesNascimento + '/' + anoNascimento;
 
     // verifica se a data de nascimento está com a quantidade de caracteres correta, ou seja passou pela validação (00/00/0000)
-    if (dtNascimento.length === 10) this.input.value = dtNascimento;
+    if (dtNascimento.length > 6) this.input.value = dtNascimento;
   }
 
   // Mascaras do campo RG
@@ -58,7 +58,7 @@ export default class Mask {
     const rgFinal = primeiro + segundo + terceiro + digito;
 
     // Verifica a quantidade de caracteres se está correta e adiciona o valor filtrado no input
-    if (rgFinal.length === 12) this.input.value = rgFinal;
+    if (rgFinal.length > 7) this.input.value = rgFinal;
   }
 
   // Mascaras do campo CPF
@@ -79,7 +79,7 @@ export default class Mask {
     const cpfFinal = primeiro + segundo + terceiro + digito;
 
     // verifica se possui a quantidade de numeros correta e adiciona o valor ao input
-    if (cpfFinal.length === 14) this.input.value = cpfFinal;
+    if (cpfFinal.length > 8) this.input.value = cpfFinal;
   }
 
   // Mascaras do campo CEP
@@ -94,7 +94,7 @@ export default class Mask {
     const cepFinal = filtro.slice(0, 5) + '-' + filtro.slice(5, 8);
 
     // verifica se possui a quantidade de numeros correta e adiciona ao input
-    if (cepFinal.length === 9) this.input.value = cepFinal;
+    if (cepFinal.length > 4) this.input.value = cepFinal;
   }
 
   // Mascara numero
@@ -135,7 +135,7 @@ export default class Mask {
 
     // verifica se o telefone é válido
     if (telRegex.test(this.input.value)) {
-      if (this.input.value.length >= 8) this.input.value = filtro;
+      if (this.input.value.length > 6) this.input.value = filtro;
     } else {
       this.input.value = 'Telefone incorreto';
     }
@@ -152,7 +152,7 @@ export default class Mask {
 
     // verifica se o telefone é válido
     if (telRegex.test(this.input.value)) {
-      if (this.input.value.length >= 8) this.input.value = filtro;
+      if (this.input.value.length > 6) this.input.value = filtro;
     } else {
       this.input.value = 'Celular incorreto';
     }
