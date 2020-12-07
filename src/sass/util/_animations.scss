@@ -17,3 +17,13 @@
     transform: rotate(360deg);
   }
 }
+
+// fadeModal
+@keyframes fadeModal {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

@@ -35,11 +35,12 @@
         <!--formulário-->
         <section class="c-form">
             <form name="formulario">
-                <input type="text" name="nome" placeholder="Nome" maxlength="100">
+                <input type="text" name="nome" placeholder="Nome" maxlength="100" required>
 
                 <!--formulario-inline-->
                 <div class="c-form__inline">
-                    <input type="text" name="dtNascimento" id="dtNascimento" placeholder="Data de Nascimento">
+                    <input type="date" name="dtNascimento" id="dtNascimento" placeholder="Data de Nascimento"
+                        maxlength="10" required>
 
                     <select name="sexo">
                         <option selected>Sexo</option>
@@ -53,18 +54,18 @@
                         <option value="solteiro">Solteiro</option>
                     </select>
 
-                    <input type="text" name="rg" placeholder="RG">
-                    <input type="text" name="cpf" placeholder="CPF">
-                    <input type="text" name="cep" placeholder="CEP">
-                    <input type="text" name="numero" placeholder="Número" maxlength="8">
-                    <input type="text" name="endereco" placeholder="Endereço" maxlength="100">
-                    <input type="text" name="bairro" placeholder="Bairro" maxlength="50">
+                    <input type="text" name="rg" placeholder="RG" maxlength="12" required>
+                    <input type="text" name="cpf" placeholder="CPF" required>
+                    <input type="text" name="cep" placeholder="CEP" maxlength="9" required>
+                    <input type="text" name="numero" placeholder="Número" maxlength="8" required>
+                    <input type="text" name="endereco" placeholder="Endereço" maxlength="100" required>
+                    <input type="text" name="bairro" placeholder="Bairro" maxlength="50" required>
                 </div>
                 <!--formulario-inline-->
 
-                <input type="text" name="telefone" id="telefone" placeholder="Telefone">
-                <input type="tel" name="celular" id="celular" placeholder="Celular">
-                <input type="email" name="email" id="email" placeholder="E-mail" maxlength="100">
+                <input type="text" name="telefone" id="telefone" placeholder="Telefone" required>
+                <input type="tel" name="celular" id="celular" placeholder="Celular" required>
+                <input type="email" name="email" id="email" placeholder="E-mail" maxlength="100" required>
 
                 <!--formulario-inline-->
                 <div class="c-form__inline">

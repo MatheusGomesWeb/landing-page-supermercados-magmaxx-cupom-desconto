@@ -9,7 +9,7 @@ $componentName: 'c-modal';
   background-color: rgba(0, 0, 0, 0.5);
   display: none;
   opacity: 0;
-  transition: opacity 0.5s;
+  animation: fadeModal 0.3s forwards;
 
   // ativa modal
   &[data-active-modal='true'] {
@@ -84,7 +84,8 @@ $componentName: 'c-modal';
     padding: 1rem 2rem;
 
     @include d(mobile) {
-      font-size: rem(18);
+      font-size: rem(15);
+      padding: 1rem 1rem;
     }
 
     &__type {
@@ -105,8 +106,8 @@ $componentName: 'c-modal';
     overflow-y: scroll;
 
     @include d(mobile) {
-      padding: 1rem;
-      font-size: rem(16);
+      padding: 1rem 0;
+      font-size: rem(14);
     }
   }
 
@@ -124,6 +125,13 @@ $componentName: 'c-modal';
       text-transform: uppercase;
       &:not(:nth-child(1)) {
         margin-top: 0.2rem;
+        @include d(mobile) {
+          margin-top: 0.5rem;
+        }
+      }
+
+      &:nth-last-child(1) {
+        margin-bottom: 1.5rem;
       }
 
       // Bolinha das Listas
@@ -136,6 +144,9 @@ $componentName: 'c-modal';
         top: -0.12rem;
         left: -0.5rem;
       }
+    }
+    &__campo {
+      margin-left: 0.3rem;
     }
   }
 

@@ -1,6 +1,7 @@
 import Modal from './Modal';
-import validateForm from './validateForm';
+import validateForm, { converterDtNascimento } from './validateForm';
 import { buscarCep } from './Api';
+import Mask from './Mask';
 
 export default class Form {
   constructor() {
@@ -68,6 +69,9 @@ export default class Form {
     if (typeError === 0) {
       // Pinta a borda de vermelho
       input.style.border = '1px solid #ff3333';
+      if (input.localName !== 'select') {
+        input.value = '';
+      }
       input.focus();
 
       // tira a borda do select ao selecionar outro valor do input
@@ -107,7 +111,7 @@ export default class Form {
     const nome = validateForm('nome', this.form.nome.value);
     const dtNascimento = validateForm(
       'dtNascimento',
-      this.form.dtNascimento.value
+      converterDtNascimento(this.form.dtNascimento.value)
     );
 
     // Retorna true ou false se selecionou uma opção correta
@@ -247,11 +251,41 @@ export default class Form {
           location.reload(true);
         }, 3000);
       }
+
+      console.log(
+        this.form.nome.value,
+        this.form.dtNascimento.value,
+        this.form.sexo.value,
+        this.form.estadoCivil.value,
+        this.form.rg.value,
+        this.form.cpf.value,
+        this.form.cep.value,
+        this.form.numero.value,
+        this.form.endereco.value,
+        this.form.bairro.value,
+        this.form.telefone.value,
+        this.form.celular.value,
+        this.form.email.value,
+        this.form.termos.checked
+      );
     }
   }
 
   // Adiciona eventos ao formulario
   addEvents() {
+    // Mascaras formulario
+    const rg = new Mask('rg', this.form.rg);
+    const cpf = new Mask('cpf', this.form.cpf);
+    const cep = new Mask('cep', this.form.cep);
+    const telefone = new Mask('telefone', this.form.telefone);
+    const celular = new Mask('celular', this.form.celular);
+    rg.init();
+    cpf.init();
+    cep.init();
+    telefone.init();
+    celular.init();
+
+    // Eventos
     this.form.cep.addEventListener('change', this.preencherCep);
     this.form.addEventListener('submit', this.submit);
   }
