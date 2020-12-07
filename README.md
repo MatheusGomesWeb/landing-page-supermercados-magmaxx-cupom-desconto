@@ -12,7 +12,7 @@
   Landing Page para Cadastro de Cupom de Desconto dos <strong>Supermercados Magmaxx</strong> com busca automática de endereço e interatividade
 </p>
 
-<p align="center"><b>Em Desenvolvimento</b> :heavy_check_mark:</p>
+<p align="center"><b>Concluído</b> :heavy_check_mark:</p>
   
 <p align="center">
  <a href="#computer-sobre">Sobre</a> •
@@ -33,29 +33,39 @@ Landing Page para Cadastro de Cupom de Desconto dos **Supermercados Magmaxx** co
 
 ### :hammer: Tecnologias
 
-- [HTML5](https://developer.mozilla.org/pt-BR/docs/Web/HTML/HTML5)
-- [CSS3](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
-- [JAVASCRIPT](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
-  - [API ViaCep](https://viacep.com.br/)
-- [WEBPACK]()
-- [SASS](https://sass-lang.com/)
-- [GULP](https://gulpjs.com/)
-- [DESIGN RESPONSIVO - MOBILE FIRST](https://www.hostgator.com.br/blog/mobile-first-o-que-e/)
+- **FrontEnd**
+
+  - HTML5
+  - CSS3
+  - JAVASCRIPT
+  - SASS
+  - RESPONSIVO
+
+- **Ferramentas**
+
+  - Gulp
+  - Webpack
+
+- **API**
+  - [VIACEP](https://viacep.com.br/)
 
 ---
 
 ### :wrench: Otimizações
 
 - Imagens minificadas
-- Css minificado
+- CSS minificado
 - Javascript minificado
 - Mobile First (Responsivo) 📱
 - Compativel com todos os browsers.
+- Compativel com todos os dispositivos.
 - Busca automatica de Endereço na API VIACEP
 - RegExp para validação dos campos do formulário
 - Modal dinâmico e interativo
 - Validação dos campos interativo
 - Botôes de Scroll animados
+
+---
 
 ### :rocket: Performance
 
