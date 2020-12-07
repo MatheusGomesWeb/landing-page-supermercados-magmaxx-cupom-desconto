@@ -7,7 +7,7 @@ $componentName: 'c-titulo';
 
   h1 {
     font-size: $extra-grande;
-    line-height: calc($grande * 1.5);
+    line-height: calc(32px * 1.5);
 
     @include d(mobile) {
       font-size: $grande;
@@ -17,7 +17,7 @@ $componentName: 'c-titulo';
   h2 {
     font-size: $grande;
     margin: 1rem 0;
-    line-height: calc($extra-media * 1.5);
+    line-height: calc(28px * 1.5);
 
     @include d(mobile) {
       font-size: $extra-media;
@@ -36,11 +36,11 @@ $componentName: 'c-titulo';
   h6 {
     font-size: $normal;
     margin-bottom: 1rem;
-    line-height: calc($normal * 1.5);
+    line-height: calc(16px * 1.5);
 
     @include d(mobile) {
       font-size: $pequeno;
-      line-height: calc($pequeno * 1.5);
+      line-height: calc(14px * 1.5);
     }
   }
 
@@ -52,7 +52,7 @@ $componentName: 'c-titulo';
     padding: 0.5rem;
     border-radius: 4px;
     margin-top: 1rem;
-    line-height: calc($media * 1.5);
+    line-height: calc(20px * 1.5);
 
     @include d(mobile) {
       font-size: $media !important;
