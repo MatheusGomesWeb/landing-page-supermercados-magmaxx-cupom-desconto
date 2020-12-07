@@ -80,6 +80,8 @@ export default class Mask {
 
     // verifica se possui a quantidade de numeros correta e adiciona o valor ao input
     if (cpfFinal.length > 8) this.input.value = cpfFinal;
+
+    console.log(cpfFinal);
   }
 
   // Mascaras do campo CEP
@@ -127,35 +129,37 @@ export default class Mask {
   // Mascara telefone
   telefone() {
     // selecionar tudo que nao for numero
-    const telRegex = /(?:\+?55\s?)?(?:\(?\d{2}\)?[-\s]?)?\d{4,5}[-\s]?\d{4}/g;
+    // const telRegex = /(?:\+?55\s?)?(?:\(?\d{2}\)?[-\s]?)?\d{4,5}[-\s]?\d{4}/g;
 
     // filtra apenas os numeros
     const regexp = /[^\d]/g;
     const filtro = this.input.value.replace(regexp, '');
 
     // verifica se o telefone é válido
-    if (telRegex.test(this.input.value)) {
-      if (this.input.value.length > 6) this.input.value = filtro;
-    } else {
-      this.input.value = 'Telefone incorreto';
-    }
+    //if (telRegex.test(this.input.value)) {
+    if (this.input.value.length > 6) this.input.value = filtro;
+    //} else {
+    // this.input.value = 'Telefone incorreto';
+    //}
+
+    console.log(filtro);
   }
 
   // Mascara celular
   celular() {
     // selecionar tudo que nao for numero
-    const telRegex = /(?:\+?55\s?)?(?:\(?\d{2}\)?[-\s]?)?\d{4,5}[-\s]?\d{4}/g;
+    // const telRegex = /(?:\+?55\s?)?(?:\(?\d{2}\)?[-\s]?)?\d{4,5}[-\s]?\d{4}/g;
 
     // filtra apenas os numeros
     const regexp = /[^\d]/g;
     const filtro = this.input.value.replace(regexp, '');
 
     // verifica se o telefone é válido
-    if (telRegex.test(this.input.value)) {
-      if (this.input.value.length > 6) this.input.value = filtro;
-    } else {
-      this.input.value = 'Celular incorreto';
-    }
+    //if (telRegex.test(this.input.value)) {
+    if (this.input.value.length > 6) this.input.value = filtro;
+    //} else {
+    //this.input.value = 'Celular incorreto';
+    //}
   }
 
   // Redireciona para a função desejada
