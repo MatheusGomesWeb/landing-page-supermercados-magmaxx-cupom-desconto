@@ -95,9 +95,9 @@ export default class Form {
     if (typeError === 0) {
       // Pinta a borda de vermelho
       input.style.border = '1px solid #ff3333';
-      if (input.localName !== 'select') {
+      /* if (input.localName !== 'select') {
         input.value = '';
-      }
+      } */
       input.focus();
 
       // tira a borda do select ao selecionar outro valor do input
