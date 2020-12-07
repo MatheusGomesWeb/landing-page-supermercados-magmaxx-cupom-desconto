@@ -35,15 +35,12 @@ function minifySass() {
     .src(settings.src.sass + '*.scss')
     .pipe(
       gulp_sass({
-        outputStyle: 'expanded',
+        outputStyle: 'compressed',
       })
     )
     .pipe(
       gulp_autoprefixer({
         cascade: false,
-        grid: 'autoplace',
-        flexbox: true,
-        overrideBrowserslist: ['last 99 versions'],
       })
     )
 
