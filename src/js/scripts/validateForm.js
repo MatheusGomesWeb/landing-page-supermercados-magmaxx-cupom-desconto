@@ -38,6 +38,26 @@ const types = {
     message: 'Celular inválido',
   },
   telefone: {
+    /*
+    '+55 11 98888-8888',
+  '+55 11 98888 8888',
+  '+55 11 988888888',
+  '+55 11988888888',
+  '+5511988888888',
+  '5511988888888',
+  '11 98888-8888',
+  '11 98888 8888',
+  '(11) 98888 8888',
+  '(11) 98888-8888',
+  '11-98888-8888',
+  '11 98888 8888',
+  '11988888888',
+  '11988888888',
+  '988888888',
+  '(11)988888888',
+  '98888 8888',
+  '8888 8888'
+    */
     regex: /(?:\+?55\s?)?(?:\(?\d{2}\)?[-\s]?)?\d{4,5}[-\s]?\d{4}/g,
     message: 'Telefone inválido',
   },
@@ -74,17 +94,4 @@ export default function validateForm(type, value) {
   return {
     mensagem,
   };
-}
-
-// Converter formato de data de nascimento para (00-00-0000)
-export function converterDtNascimento(value) {
-  const data = value.split('-');
-
-  const ano = data[0];
-  const mes = data[1];
-  const dia = data[2];
-
-  const novaData = `${dia}-${mes}-${ano}`;
-
-  return novaData;
 }

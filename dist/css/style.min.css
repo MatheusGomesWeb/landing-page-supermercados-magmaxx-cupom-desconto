@@ -468,6 +468,7 @@ body {
   margin-right: 0.5rem;
   width: 32px;
   height: 32px;
+  cursor: pointer;
 }
 
 @media (max-width: 599px) {
@@ -475,6 +476,18 @@ body {
     width: 22px;
     height: 22px;
   }
+}
+
+.l-footer__entregas__social-list a {
+  text-decoration: none;
+}
+
+.l-footer__entregas__social-list a:hover {
+  opacity: 0.8;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  -moz-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .l-footer__entregas__img-caminhao {

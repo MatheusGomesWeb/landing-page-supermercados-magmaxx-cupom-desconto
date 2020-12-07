@@ -117,11 +117,21 @@ $layout: 'l-footer';
           margin-right: 0.5rem;
           width: 32px;
           height: 32px;
+          cursor: pointer;
 
           @include d(mobile) {
             width: 22px;
             height: 22px;
           }
+        }
+      }
+
+      & a {
+        text-decoration: none;
+
+        &:hover {
+          opacity: 0.8;
+          transition: 0.3s;
         }
       }
     }

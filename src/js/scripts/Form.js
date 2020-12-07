@@ -1,5 +1,5 @@
 import Modal from './Modal';
-import validateForm, { converterDtNascimento } from './validateForm';
+import validateForm from './validateForm';
 import { buscarCep } from './Api';
 import Mask from './Mask';
 
@@ -9,6 +9,15 @@ export default class Form {
 
     this.preencherCep = this.preencherCep.bind(this);
     this.submit = this.submit.bind(this);
+  }
+
+  // remove tudo que não é numero e retorna apenas os numeros
+  limparDados(dado) {
+    const regexp = /[^\d]/g;
+
+    const filtro = Number(dado.replace(regexp, ''));
+
+    return filtro;
   }
 
   // Preenche o campo endereço automaticamente
@@ -54,6 +63,23 @@ export default class Form {
         // Após carregar fecha o modal de loading
         if (!loading) {
           modal.closeModal();
+        }
+
+        if (
+          this.form.endereco.value === 'undefined' &&
+          this.form.bairro.value === 'undefined'
+        ) {
+          modal.start();
+          // Mensagem do Modal
+          modal.messageModal({
+            type: 0,
+            typeTitle: 'ERRO AO CARREGAR INFORMAÇÕES DESTE CEP',
+            typeMessage: `${this.form.cep.value}`,
+            message: ['Por favor informe um CEP válido'],
+          });
+
+          this.form.endereco.value = '';
+          this.form.bairro.value = '';
         }
       }
     };
@@ -111,7 +137,7 @@ export default class Form {
     const nome = validateForm('nome', this.form.nome.value);
     const dtNascimento = validateForm(
       'dtNascimento',
-      converterDtNascimento(this.form.dtNascimento.value)
+      this.form.dtNascimento.value
     );
 
     // Retorna true ou false se selecionou uma opção correta
@@ -132,7 +158,10 @@ export default class Form {
     const rg = validateForm('rg', this.form.rg.value);
     const cpf = validateForm('cpf', this.form.cpf.value);
     const endereco = validateForm('endereco', this.form.endereco.value);
-    const numero = validateForm('numero', this.form.numero.value);
+    const numero = validateForm(
+      'numero',
+      this.limparDados(this.form.numero.value)
+    );
     const cep = validateForm('cep', this.form.cep.value);
     const bairro = validateForm('bairro', this.form.bairro.value);
     const telefone = validateForm('telefone', this.form.telefone.value);
@@ -233,6 +262,25 @@ export default class Form {
       // Aqui envia o POST para a API
       const apiPost = true;
 
+      // Dados tratados e prontos para serem enviados para a API
+      const data = {
+        nome: this.form.nome.value,
+        dtNascimento: this.limparDados(this.form.dtNascimento.value),
+        sexo: this.form.sexo.value,
+        estadoCivil: this.form.estadoCivil.value,
+        rg: this.limparDados(this.form.rg.value),
+        cpf: this.limparDados(this.form.cpf.value),
+        cep: this.limparDados(this.form.cep.value),
+        numero: this.limparDados(this.form.numero.value),
+        endereco: this.form.endereco.value,
+        bairro: this.form.bairro.value,
+        telefone: this.limparDados(this.form.telefone.value),
+        celular: this.limparDados(this.form.celular.value),
+        email: this.form.email.value,
+        termos: this.form.termos.checked,
+      };
+      console.log(data);
+
       // se o Retorno do POST na api for true, mostra a mensagem sucesso e redireciona em 3s
       if (apiPost) {
         // abre o modal sem o evento de fechar
@@ -251,38 +299,31 @@ export default class Form {
           location.reload(true);
         }, 3000);
       }
-
-      console.log(
-        this.form.nome.value,
-        this.form.dtNascimento.value,
-        this.form.sexo.value,
-        this.form.estadoCivil.value,
-        this.form.rg.value,
-        this.form.cpf.value,
-        this.form.cep.value,
-        this.form.numero.value,
-        this.form.endereco.value,
-        this.form.bairro.value,
-        this.form.telefone.value,
-        this.form.celular.value,
-        this.form.email.value,
-        this.form.termos.checked
-      );
     }
   }
 
   // Adiciona eventos ao formulario
   addEvents() {
     // Mascaras formulario
+    const dtNascimento = new Mask('dtNascimento', this.form.dtNascimento);
+    dtNascimento.init();
+
     const rg = new Mask('rg', this.form.rg);
-    const cpf = new Mask('cpf', this.form.cpf);
-    const cep = new Mask('cep', this.form.cep);
-    const telefone = new Mask('telefone', this.form.telefone);
-    const celular = new Mask('celular', this.form.celular);
     rg.init();
+
+    const cpf = new Mask('cpf', this.form.cpf);
     cpf.init();
+
+    const cep = new Mask('cep', this.form.cep);
     cep.init();
+
+    const numero = new Mask('numero', this.form.numero);
+    numero.init();
+
+    const telefone = new Mask('telefone', this.form.telefone);
     telefone.init();
+
+    const celular = new Mask('celular', this.form.celular);
     celular.init();
 
     // Eventos
