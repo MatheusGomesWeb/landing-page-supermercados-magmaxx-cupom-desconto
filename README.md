@@ -9,7 +9,7 @@
 </h1>
 
 <p align="center">
-  Landing Page para Cadastro de Cupom de Desconto dos <strong>Supermercados Magmaxx</strong> 
+  Landing Page para Cadastro de Cupom de Desconto dos <strong>Supermercados Magmaxx</strong> com busca automática de endereço e interatividade
 </p>
 
 <p align="center"><b>Em Desenvolvimento</b> :heavy_check_mark:</p>
@@ -27,7 +27,7 @@
 
 ### :computer: Sobre
 
-Landing Page para Cadastro de Cupom de Desconto dos **Supermercados Magmaxx**
+Landing Page para Cadastro de Cupom de Desconto dos **Supermercados Magmaxx** com busca automática de endereço e interatividade
 
 ---
 
@@ -36,6 +36,7 @@ Landing Page para Cadastro de Cupom de Desconto dos **Supermercados Magmaxx**
 - [HTML5](https://developer.mozilla.org/pt-BR/docs/Web/HTML/HTML5)
 - [CSS3](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
 - [JAVASCRIPT](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
+  - [API ViaCep](https://viacep.com.br/)
 - [WEBPACK]()
 - [SASS](https://sass-lang.com/)
 - [GULP](https://gulpjs.com/)
@@ -50,6 +51,11 @@ Landing Page para Cadastro de Cupom de Desconto dos **Supermercados Magmaxx**
 - Javascript minificado
 - Mobile First (Responsivo) 📱
 - Compativel com todos os browsers.
+- Busca automatica de Endereço na API VIACEP
+- RegExp para validação dos campos do formulário
+- Modal dinâmico e interativo
+- Validação dos campos interativo
+- Botôes de Scroll animados
 
 ### :rocket: Performance
 
