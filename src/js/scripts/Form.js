@@ -298,9 +298,9 @@ export default class Form {
         });
 
         // Redireciona em 3s apos mostrar a mensagem do modal
-        /* setTimeout(() => {
+        setTimeout(() => {
           location.reload(true);
-        }, 3000); */
+        }, 3000);
       }
     }
   }
