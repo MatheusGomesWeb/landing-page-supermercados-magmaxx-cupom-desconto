@@ -22,7 +22,7 @@ const types = {
     message: 'RG inválido',
   },
   cpf: {
-    regex: /(?:\d{3}[-.]?){3}\d{2}/g,
+    regex: /(?:\d{3}[-.]?){3}\d{2}/,
     message: 'CPF inválido',
   },
   cep: {
@@ -30,11 +30,11 @@ const types = {
     message: 'Informe um cep válido',
   },
   numero: {
-    regex: /^\d+$/,
+    regex: /[\d]/,
     message: 'Utilize apenas números',
   },
   celular: {
-    regex: /(?:\+?55\s?)?(?:\(?\d{2}\)?[-\s]?)?\d{4,5}[-\s]?\d{4}/g,
+    regex: /(?:\+?55\s?)?(?:\(?\d{2}\)?[-\s]?)?\d{4,5}[-\s]?\d{4}/,
     message: 'Celular inválido',
   },
   telefone: {
@@ -58,7 +58,7 @@ const types = {
   '98888 8888',
   '8888 8888'
     */
-    regex: /(?:\+?55\s?)?(?:\(?\d{2}\)?[-\s]?)?\d{4,5}[-\s]?\d{4}/g,
+    regex: /(?:\+?55\s?)?(?:\(?\d{2}\)?[-\s]?)?\d{4,5}[-\s]?\d{4}/,
     message: 'Telefone inválido',
   },
   email: {
@@ -75,14 +75,16 @@ export default function validateForm(type, value) {
   function validate(value) {
     if (type === false && value === false) return true;
 
-    if (value.length === 0) {
+    if (!value) {
       mensagem = `Preencha um valor no campo: <strong class="c-modal__list__campo">${type}</strong>`;
       return false;
     } else if (types[type] && !types[type].regex.test(value)) {
       mensagem = `${types[type].message}: <strong style="margin-left: .3rem;">${type}</strong>`;
+
       return false;
     } else {
       mensagem = '';
+
       return true;
     }
   }

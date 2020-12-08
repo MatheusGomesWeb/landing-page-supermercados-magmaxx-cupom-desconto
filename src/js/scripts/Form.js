@@ -95,9 +95,11 @@ export default class Form {
     if (typeError === 0) {
       // Pinta a borda de vermelho
       input.style.border = '1px solid #ff3333';
-      /* if (input.localName !== 'select') {
+
+      if (input.localName !== 'select') {
         input.value = '';
-      } */
+      }
+
       input.focus();
 
       // tira a borda do select ao selecionar outro valor do input
@@ -155,6 +157,7 @@ export default class Form {
         : true;
 
     // Seleciona os valores dos campos e os valida
+
     const rg = validateForm('rg', this.form.rg.value);
     const cpf = validateForm('cpf', this.form.cpf.value);
     const endereco = validateForm('endereco', this.form.endereco.value);
@@ -195,19 +198,19 @@ export default class Form {
         typeTitle: 'ERRO',
         typeMessage: 'verifique os dados',
         message: [
-          nome.mensagem,
-          dtNascimento.mensagem,
+          nome.mensagem ? nome.mensagem : null,
+          dtNascimento.mensagem ? dtNascimento.mensagem : null,
           !sexo ? 'Selecione o campo SEXO' : null,
           !estadoCivil ? 'Selecione o campo Estado Cívil' : null,
-          rg.mensagem,
-          cpf.mensagem,
-          endereco.mensagem,
-          numero.mensagem,
-          cep.mensagem,
-          bairro.mensagem,
-          telefone.mensagem,
-          celular.mensagem,
-          email.mensagem,
+          rg.mensagem ? rg.mensagem : null,
+          cpf.mensagem ? cpf.mensagem : null,
+          endereco.mensagem ? endereco.mensagem : null,
+          numero.mensagem ? numero.mensagem : null,
+          cep.mensagem ? cep.mensagem : null,
+          bairro.mensagem ? bairro.mensagem : null,
+          telefone.mensagem ? telefone.mensagem : null,
+          celular.mensagem ? celular.mensagem : null,
+          email.mensagem ? email.mensagem : null,
           !checkbox
             ? 'Você precisa concordar com os termos para enviar.'
             : null,
@@ -295,9 +298,9 @@ export default class Form {
         });
 
         // Redireciona em 3s apos mostrar a mensagem do modal
-        setTimeout(() => {
+        /* setTimeout(() => {
           location.reload(true);
-        }, 3000);
+        }, 3000); */
       }
     }
   }

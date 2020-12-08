@@ -19,25 +19,26 @@ export default class Mask {
 
     // Pega a data atual
     const dataAtual = new Date();
-    // Pega o ano atual
     const anoAtual = dataAtual.getFullYear();
 
-    // verifica se o dia é menor ou igual que 31
-    const diaNascimento = filtro.slice(0, 2) <= 31 ? filtro.slice(0, 2) : '**';
+    const dtNascimentoMask = filtro.split();
 
-    // verifica se o mes é menor ou igual a 12
-    const mesNascimento = filtro.slice(2, 4) <= 12 ? filtro.slice(2, 4) : '**';
+    if (dtNascimentoMask[0].length >= 8) {
+      const dia = dtNascimentoMask[0][0] + dtNascimentoMask[0][1];
+      const mes = dtNascimentoMask[0][2] + dtNascimentoMask[0][3];
+      const ano =
+        dtNascimentoMask[0][4] +
+        dtNascimentoMask[0][5] +
+        dtNascimentoMask[0][6] +
+        dtNascimentoMask[0][7];
 
-    // verifica se o ano é maior que o ano atual
-    const anoNascimento =
-      filtro.slice(4, 8) >= anoAtual ? '****' : filtro.slice(4, 8);
+      const dtNascimentoFinal =
+        dia <= 31 && mes <= 12 && ano < anoAtual && ano > 1900
+          ? `${dia}/${mes}/${ano}`
+          : `**/**/****`;
 
-    // Transforma a data de nascimento final (00/00/0000)
-    const dtNascimento =
-      diaNascimento + '/' + mesNascimento + '/' + anoNascimento;
-
-    // verifica se a data de nascimento está com a quantidade de caracteres correta, ou seja passou pela validação (00/00/0000)
-    if (dtNascimento.length > 6) this.input.value = dtNascimento;
+      this.input.value = dtNascimentoFinal;
+    }
   }
 
   // Mascaras do campo RG
@@ -48,17 +49,18 @@ export default class Mask {
     // remove tudo que não for numero e retorna todos os numeros
     const filtro = this.input.value.replace(regexp, '');
 
-    // Separa os numeros conforme as regras de um rg (00.000.000-0)
-    const primeiro = filtro.slice(0, 2) + '.';
-    const segundo = filtro.slice(2, 5) + '.';
-    const terceiro = filtro.slice(5, 8) + '-';
-    const digito = filtro.slice(8, 9);
+    const rgMask = filtro.split();
 
-    // Forma o numero de RG final (00.000.000-0)
-    const rgFinal = primeiro + segundo + terceiro + digito;
+    if (rgMask[0].length >= 9) {
+      const primeiro = rgMask[0][0] + rgMask[0][1];
+      const segundo = rgMask[0][2] + rgMask[0][3] + rgMask[0][4];
+      const terceiro = rgMask[0][5] + rgMask[0][6] + rgMask[0][7];
+      const digito = rgMask[0][8];
 
-    // Verifica a quantidade de caracteres se está correta e adiciona o valor filtrado no input
-    if (rgFinal.length > 7) this.input.value = rgFinal;
+      const rgFinal = `${primeiro}.${segundo}.${terceiro}-${digito}`;
+
+      this.input.value = rgFinal;
+    }
   }
 
   // Mascaras do campo CPF
@@ -69,19 +71,20 @@ export default class Mask {
     // remove tudo que nao for numero
     const filtro = this.input.value.replace(regexp, '');
 
-    // separa os digitos e adiciona os . e - (000.000.000-00)
-    const primeiro = filtro.slice(0, 3) + '.';
-    const segundo = filtro.slice(3, 6) + '.';
-    const terceiro = filtro.slice(6, 9) + '-';
-    const digito = filtro.slice(9, 11);
+    // Converte em array
+    const cpfMask = filtro.split();
 
-    // Forma o numero final do cpf
-    const cpfFinal = primeiro + segundo + terceiro + digito;
+    // verifica se possui 11 numeros digitados e retorna o valor com mascara
+    if (cpfMask[0].length >= 11) {
+      const primeiro = cpfMask[0][0] + cpfMask[0][1] + cpfMask[0][2];
+      const segundo = cpfMask[0][3] + cpfMask[0][4] + cpfMask[0][5];
+      const terceiro = cpfMask[0][6] + cpfMask[0][7] + cpfMask[0][8];
+      const digito = cpfMask[0][9] + cpfMask[0][10];
 
-    // verifica se possui a quantidade de numeros correta e adiciona o valor ao input
-    if (cpfFinal.length > 8) this.input.value = cpfFinal;
+      const cpfFinal = `${primeiro}.${segundo}.${terceiro}-${digito}`;
 
-    console.log(cpfFinal);
+      this.input.value = cpfFinal;
+    }
   }
 
   // Mascaras do campo CEP
@@ -92,11 +95,22 @@ export default class Mask {
     // remove tudo que nao for numero
     const filtro = this.input.value.replace(regexp, '');
 
-    // forma o cep final (00000-000)
-    const cepFinal = filtro.slice(0, 5) + '-' + filtro.slice(5, 8);
+    const cepMask = filtro.split();
 
-    // verifica se possui a quantidade de numeros correta e adiciona ao input
-    if (cepFinal.length > 4) this.input.value = cepFinal;
+    if (cepMask[0].length >= 8) {
+      const cepFinal =
+        cepMask[0][0] +
+        cepMask[0][1] +
+        cepMask[0][2] +
+        cepMask[0][3] +
+        cepMask[0][4] +
+        '-' +
+        cepMask[0][5] +
+        cepMask[0][6] +
+        cepMask[0][7];
+
+      this.input.value = cepFinal;
+    }
   }
 
   // Mascara numero
@@ -107,7 +121,6 @@ export default class Mask {
     // retorna apenas os numeros
     const filtro = this.input.value.replace(regexp, '');
 
-    // if (!regexp.test(this.input.value)) {
     const split = filtro.split();
 
     if (split[0].length === 5) {
@@ -128,38 +141,195 @@ export default class Mask {
 
   // Mascara telefone
   telefone() {
-    // selecionar tudo que nao for numero
-    // const telRegex = /(?:\+?55\s?)?(?:\(?\d{2}\)?[-\s]?)?\d{4,5}[-\s]?\d{4}/g;
-
     // filtra apenas os numeros
     const regexp = /[^\d]/g;
     const filtro = this.input.value.replace(regexp, '');
 
-    // verifica se o telefone é válido
-    //if (telRegex.test(this.input.value)) {
-    if (this.input.value.length > 6) this.input.value = filtro;
-    //} else {
-    // this.input.value = 'Telefone incorreto';
-    //}
+    const telefoneMask = filtro.split();
 
-    console.log(filtro);
+    if (telefoneMask[0].length >= 8) {
+      let telefoneFinal;
+
+      // sem 9 na frente
+      if (telefoneMask[0].length === 8) {
+        // 0000-0000
+        telefoneFinal =
+          telefoneMask[0][0] +
+          telefoneMask[0][1] +
+          telefoneMask[0][2] +
+          telefoneMask[0][3] +
+          '-' +
+          telefoneMask[0][4] +
+          telefoneMask[0][5] +
+          telefoneMask[0][6] +
+          telefoneMask[0][7];
+      }
+
+      // com 9 na frente
+      else if (telefoneMask[0].length === 9) {
+        // 0 0000-0000
+        telefoneFinal =
+          telefoneMask[0][0] +
+          telefoneMask[0][1] +
+          telefoneMask[0][2] +
+          telefoneMask[0][3] +
+          telefoneMask[0][4] +
+          '-' +
+          telefoneMask[0][5] +
+          telefoneMask[0][6] +
+          telefoneMask[0][7] +
+          telefoneMask[0][8];
+      }
+
+      // fixo na frente
+      else if (telefoneMask[0].length === 10) {
+        // 00 0000-0000
+        telefoneFinal =
+          '(' +
+          telefoneMask[0][0] +
+          telefoneMask[0][1] +
+          ')' +
+          telefoneMask[0][2] +
+          telefoneMask[0][3] +
+          telefoneMask[0][4] +
+          telefoneMask[0][5] +
+          '-' +
+          telefoneMask[0][6] +
+          telefoneMask[0][7] +
+          telefoneMask[0][8] +
+          telefoneMask[0][9];
+      }
+
+      // com ddd (00)
+      else if (telefoneMask[0].length === 11) {
+        // 00 0 0000-0000
+        telefoneFinal =
+          '(' +
+          telefoneMask[0][0] +
+          telefoneMask[0][1] +
+          ')' +
+          telefoneMask[0][2] +
+          telefoneMask[0][3] +
+          telefoneMask[0][4] +
+          telefoneMask[0][5] +
+          telefoneMask[0][6] +
+          '-' +
+          telefoneMask[0][5] +
+          telefoneMask[0][6] +
+          telefoneMask[0][7] +
+          telefoneMask[0][8];
+      }
+
+      // com ddd (000)
+      else if (telefoneMask[0].length >= 12) {
+        // 000 0 0000-0000
+        telefoneFinal =
+          '(' +
+          telefoneMask[0][0] +
+          telefoneMask[0][1] +
+          telefoneMask[0][2] +
+          ')' +
+          telefoneMask[0][3] +
+          telefoneMask[0][4] +
+          telefoneMask[0][5] +
+          telefoneMask[0][6] +
+          telefoneMask[0][7] +
+          '-' +
+          telefoneMask[0][8] +
+          telefoneMask[0][9] +
+          telefoneMask[0][10] +
+          telefoneMask[0][11];
+      }
+
+      this.input.value = telefoneFinal;
+    }
   }
 
   // Mascara celular
   celular() {
-    // selecionar tudo que nao for numero
-    // const telRegex = /(?:\+?55\s?)?(?:\(?\d{2}\)?[-\s]?)?\d{4,5}[-\s]?\d{4}/g;
-
     // filtra apenas os numeros
     const regexp = /[^\d]/g;
     const filtro = this.input.value.replace(regexp, '');
 
-    // verifica se o telefone é válido
-    //if (telRegex.test(this.input.value)) {
-    if (this.input.value.length > 6) this.input.value = filtro;
-    //} else {
-    //this.input.value = 'Celular incorreto';
-    //}
+    const telefoneMask = filtro.split();
+
+    if (telefoneMask[0].length >= 8) {
+      let telefoneFinal;
+
+      // sem 9 na frente
+      if (telefoneMask[0].length === 8) {
+        // 0000-0000
+        telefoneFinal =
+          telefoneMask[0][0] +
+          telefoneMask[0][1] +
+          telefoneMask[0][2] +
+          telefoneMask[0][3] +
+          '-' +
+          telefoneMask[0][4] +
+          telefoneMask[0][5] +
+          telefoneMask[0][6] +
+          telefoneMask[0][7];
+      }
+
+      // com 9 na frente
+      else if (telefoneMask[0].length === 9) {
+        // 0 0000-0000
+        telefoneFinal =
+          telefoneMask[0][0] +
+          telefoneMask[0][1] +
+          telefoneMask[0][2] +
+          telefoneMask[0][3] +
+          telefoneMask[0][4] +
+          '-' +
+          telefoneMask[0][5] +
+          telefoneMask[0][6] +
+          telefoneMask[0][7] +
+          telefoneMask[0][8];
+      }
+
+      // com ddd (00)
+      else if (telefoneMask[0].length === 11) {
+        // 00 0 0000-0000
+        telefoneFinal =
+          '(' +
+          telefoneMask[0][0] +
+          telefoneMask[0][1] +
+          ')' +
+          telefoneMask[0][2] +
+          telefoneMask[0][3] +
+          telefoneMask[0][4] +
+          telefoneMask[0][5] +
+          telefoneMask[0][6] +
+          '-' +
+          telefoneMask[0][5] +
+          telefoneMask[0][6] +
+          telefoneMask[0][7] +
+          telefoneMask[0][8];
+      }
+
+      // com ddd (000)
+      else if (telefoneMask[0].length >= 12) {
+        // 000 0 0000-0000
+        telefoneFinal =
+          '(' +
+          telefoneMask[0][0] +
+          telefoneMask[0][1] +
+          telefoneMask[0][2] +
+          ')' +
+          telefoneMask[0][3] +
+          telefoneMask[0][4] +
+          telefoneMask[0][5] +
+          telefoneMask[0][6] +
+          telefoneMask[0][7] +
+          '-' +
+          telefoneMask[0][8] +
+          telefoneMask[0][9] +
+          telefoneMask[0][10] +
+          telefoneMask[0][11];
+      }
+
+      this.input.value = telefoneFinal;
+    }
   }
 
   // Redireciona para a função desejada
