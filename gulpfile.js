@@ -21,9 +21,9 @@ function browserSync() {
 const settings = require('./settings.js');
 
 // Minificar Imagens - Gulp-Imagemin
-function minifyImages(callback) {
+function minifyImages() {
   gulp
-    .src(settings.src.images + '*')
+    .src(settings.src.images + '**/*')
     .pipe(gulp_imagemin())
     .pipe(gulp.dest(settings.dist.images))
     .pipe(browser_sync.stream());
@@ -32,7 +32,7 @@ function minifyImages(callback) {
 // Minificar Sass - Gulp-Sass
 function minifySass() {
   gulp
-    .src(settings.src.sass + '*.scss')
+    .src(settings.src.sass + '**/*.scss')
     .pipe(
       gulp_sass({
         outputStyle: 'compressed',
