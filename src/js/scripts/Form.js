@@ -100,19 +100,12 @@ export default class Form {
         input.value = '';
       }
 
-      input.focus();
-
-      // tira a borda do select ao selecionar outro valor do input
-      if (input.localName === 'select') {
-        input.addEventListener('change', () => {
-          input.style.border = '1px solid #cfcfcf';
-        });
-      }
-
-      // Adiciona evento keyup para tirar a borda vermelha ao digitar
-      input.addEventListener('keyup', () => {
+      //tirar a borda vermelha ao digitar
+      input.addEventListener('change', () => {
         input.style.border = '1px solid #cfcfcf';
       });
+
+      input.focus();
 
       // Adiciona borda verde caso o input esteja correto
     } else if (typeError === 1) {
