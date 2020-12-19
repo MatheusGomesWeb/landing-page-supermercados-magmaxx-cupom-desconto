@@ -27,7 +27,7 @@
 
 ### :computer: Sobre
 
-Landing Page para Cadastro de Cupom de Desconto dos **Supermercados Magmaxx** com busca automática de endereço e interatividade
+**Supermercados Magmaxx** é uma empresa rede de Supermercados Varejista, suas lojas estão localizadas na cidade de **Pariquera-Açu** e **IGUAPE** e possui um Centro de Distribuição, em uma grande área, planejada, com excelente localização, onde os departamentos administrativos e de logística da empresa estão centralizados, gerenciando toda a Rede de Supermercados Magmaxx. 
 
 ---
 
