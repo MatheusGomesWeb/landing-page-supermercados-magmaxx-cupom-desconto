@@ -1,124 +1,91 @@
-<div align="center">  
-<img src="./readme/gulp.png" alt="Gulp" height="80"/>
-<img src="./readme/eslint.png" alt="Eslint" height="40"/>
-<img src="./readme/webpack.png" alt="Webpack" height="80"/>
-</div>
-
-<br>
+<p align="center">  
+<img src="./readme/preview.png" alt="Landing Page dos Supermercados Magmaxx para Cadastrar Cupom de Desconto"/>
+</p>
 
 <h1 align="center">
-Tarefas Automatizadas Gulp
+  <a href="https://matheusgomesweb.github.io/landing-page-supermercados-magmaxx-cupom-desconto">
+    🔗 Landing Page dos Supermercados Magmaxx
+  </a> 
 </h1>
 
 <p align="center">
-  Minifique arquivos Sass, Depure erros de código JavaScript enquanto desenvolve, minifique e importe modulos e arquivos JavaScript, Reduza o tamanho das imagens, Monitore alterações em arquivos e imagens visualizando o resultado no Browser em tempo real com a ferramenta BrowserSync. 
+  Landing Page para Cadastro de Cupom de Desconto dos <strong>Supermercados Magmaxx</strong> com busca automática de endereço e interatividade
 </p>
 
-<p align="center"><b>Status</b> Finalizado</p>
-
+<p align="center"><b>Concluído</b> :heavy_check_mark:</p>
+  
 <p align="center">
- <a href="#bibliotecas-utilizadas">Bibliotecas Utilizadas</a> •
- <a href="#pré-requisitos">Pré-Requisitos</a> •
- <a href="#instalação">Instalação</a> • 
- <a href="#configuração">Configurações</a> • 
- <a href="#como-utilizar">Como Utilizar</a> • 
+ <a href="#computer-sobre">Sobre</a> •
+ <a href="#hammer-tecnologias">Tecnologias</a> • 
+ <a href="#wrench-otimizações">Otimizações</a> • 
+ <a href="#plugins">Plugins</a> • 
+ <a href="#rocket-performance">Performance</a> • 
+ <a href="#w3c">W3C</a> • 
  <a href="#autor">Autor</a> • 
  <a href="#memo-licença">Licença</a>
 </p>
 
----
+### :computer: Sobre
 
-## Ferramentas utilizadas
-
-- [Imagemin](https://www.npmjs.com/package/gulp-imagemin)
-- [Sass](https://www.npmjs.com/package/gulp-sass)
-- [Concat](https://www.npmjs.com/package/gulp-concat)
-- [AutoPrefixer](https://www.npmjs.com/package/gulp-autoprefixer)
-- [BrowserSync](https://www.npmjs.com/package/browser-sync)
-- [Webpack](https://webpack.js.org/)
-- [Eslint](https://eslint.org/docs/user-guide/getting-started)
+Landing Page para Cadastro de Cupom de Desconto dos **Supermercados Magmaxx** com busca automática de endereço e interatividade
 
 ---
 
-## Pré-Requisitos
+### :hammer: Tecnologias
 
-- [Node.js](https://nodejs.org/en/)
-- [NPM](https://www.npmjs.com/) ou [Yarn](https://yarnpkg.com/)
-- Básico de [Gulp](https://gulpjs.com/)
+- **FrontEnd**
 
----
+  - HTML5
+  - CSS3
+  - JAVASCRIPT
+  - SASS
+  - RESPONSIVO
 
-## Instalação
+- **Ferramentas**
 
-Supondo que você já tenha o **Node.js** e um gerenciador de pacotes como **NPM** ou **Yarn** instalado no seu computador, siga os passos seguintes.
+  - Gulp
+  - Webpack
 
----
-
-### Baixe ou Clone o Repositório
-
-```
-git clone https://github.com/MatheusGomesWeb/minhas-taferas-automatizadas-gulp.git
-```
+- **API**
+  - [VIACEP](https://viacep.com.br/)
 
 ---
 
-### Instale as dependencias do projeto
+### :wrench: Otimizações
 
-```
-NPM -> npm install
-```
-
-```
-YARN -> yarn install
-```
-
----
-
-## Configuração
-
-Todas as configurações estão localizadas no arquivo **settings.js**.
-
-```
-src: Caminho para os arquivos de desenvolvimento do projeto
-dist: Caminho para os arquivos de distribuição (final) do projeto.
-```
+- Imagens minificadas
+- CSS minificado
+- Javascript minificado
+- Mobile First (Responsivo) 📱
+- Compativel com todos os browsers.
+- Compativel com todos os dispositivos.
+- Busca automatica de Endereço na API VIACEP
+- RegExp para validação dos campos do formulário
+- Modal dinâmico e interativo
+- Validação dos campos interativo
+- Botôes de Scroll animados
 
 ---
 
-## Como Utilizar
+### :rocket: Performance
 
-### Tarefas Gulp
+[<img src="https://www.gstatic.com/images/icons/material/product/2x/pagespeed_64dp.png" width="46px"/>](https://developers.google.com/speed/pagespeed/insights/?hl=pt-br&url=https%3A%2F%2Fmatheusgomesweb.github.io%2Flanding-page-supermercados-magmaxx-cupom-desconto%2F&tab=desktop)
 
-```
-// Para visualizar todas as tarefas digite:
-
-gulp -T ou gulp
-```
-
-- Para executar uma tarefa digite:
-  > gulp < nometarefa >
-- **browserSync**: Inicia um servidor com **LiveReload**.
-- **watch**: Monitora todos os arquivos .html, .scss, e imagens, caso tenha alguma alteração ele compila, minifica, ou reduz o tamanho dos arquivos / imagens de acordo com a ação realizada.
-- **minifyImages**: Reduz (minifica o tamanho das imagens)
-- **minifySass**: Junta arquivos sass, adiciona prefixos dos browsers e gera arquivo css final minificado.
+- **Desktop** - 92%
+- **Mobile** - 75%
 
 ---
 
-### Tarefas Webpack
+### W3C
 
-Para configurar o caminho dos arquivos que desenvolvimento, modifique o arquivo webpack.config.js
-
-- **Comandos Webpack**
-
-- > npm run build - Gera o arquivo final para produção (otimizado)
-- > npm run dev - Gera arquivo de desenvolvimento (não otimizado)
+[<img style="border:0;width:46px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss-blue" alt="CSS válido!" />](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fmatheusgomesweb.github.io%2Flanding-page-supermercados-magmaxx-cupom-desconto%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=pt-BR)
 
 ---
 
-## Autor
+### Autor
 
 <a href="https://github.com/MatheusGomesWeb">
- <img style="border-radius: 50%; " src="https://avatars3.githubusercontent.com/u/12579898?s=96&v=4" width="100px; " alt=""/>
+ <img style="border-radius: 50%;" src="https://avatars3.githubusercontent.com/u/12579898?s=96&v=4" width="100px;" alt=""/>
  <br />
  <sub><b>Matheus Gomes</b></sub></a> <a href="https://github.com/MatheusGomesWeb" title="Matheus Gomes Web">🚀</a>
  <br>
@@ -136,6 +103,6 @@ Feito com ❤️ por Matheus Gomes 👋🏽 Entre em contato!
 
 ---
 
-## :memo: Licença
+### :memo: Licença
 
 [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)
