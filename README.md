@@ -61,6 +61,7 @@ Landing Page para Cadastro de Cupom de Desconto dos **Supermercados Magmaxx** co
 - Compativel com todos os dispositivos.
 - Busca automatica de Endereço na API VIACEP
 - RegExp para validação dos campos do formulário
+- Mascaras Formulário
 - Modal dinâmico e interativo
 - Validação dos campos interativo
 - Botôes de Scroll animados
