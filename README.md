@@ -4,12 +4,12 @@
 
 <h1 align="center">
   <a href="https://matheusgomesweb.github.io/landing-page-supermercados-magmaxx-cupom-desconto">
-    🔗 Landing Page dos Supermercados Magmaxx
+    🔗 Landing page dos supermercados magmaxx
   </a> 
 </h1>
 
 <p align="center">
-  Landing Page para Cadastro de Cupom de Desconto dos <strong>Supermercados Magmaxx</strong> com busca automática de endereço e interatividade
+  Landing page para cadastro de cupom de desconto dos <strong>supermercados magmaxx</strong> com busca automática de endereço e interatividade
 </p>
 
 <p align="center"><b>Concluído</b> :heavy_check_mark:</p>
